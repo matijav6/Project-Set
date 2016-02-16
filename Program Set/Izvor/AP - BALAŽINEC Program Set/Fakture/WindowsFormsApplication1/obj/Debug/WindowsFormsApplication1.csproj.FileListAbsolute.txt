@@ -1,0 +1,48 @@
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\users\matija\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\hr\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\hr\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.hr.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\co-FR\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.co-FR.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\co-FR\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\co-FR\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\hr\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.co-FR.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.hr.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\co-FR\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\hr\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\co-FR\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\hr\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.resources
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.co-FR.resources
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AP_Balažinec.hr.resources
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\co-FR\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\hr\WindowsFormsApplication1.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormSveukupno.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormPojedinacno.resources
+C:\Users\Matija\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormIzmjena.resources

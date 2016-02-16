@@ -1,0 +1,15 @@
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\DataBase.mdb
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\FormFirma.resx
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\FormFirma.cs
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\FormFirma.Designer.cs
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\Ponuda.exe.config
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\Ponuda.exe
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\bin\Release\Ponuda.pdb
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\WindowsFormsApplication1.FormFirma.resources
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\WindowsFormsApplication1.FormRelacije.resources
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\Ponuda.csproj.GenerateResource.Cache
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\Ponuda.exe
+C:\Users\Matija\documents\visual studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\Ponuda.pdb
+C:\Users\Matija\Documents\Visual Studio 2010\Projects\Ponuda\Ponuda\obj\x86\Release\WindowsFormsApplication1.FormIzmjena.resources

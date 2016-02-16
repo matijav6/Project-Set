@@ -1,0 +1,78 @@
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.config
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.application
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.co-FR.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.hr.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.TrustInfo.xml
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.application
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.pdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.config
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.application
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.pdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.co-FR.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.hr.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.TrustInfo.xml
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.application
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.pdb
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.config
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.manifest
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.application
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.pdb
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\co-FR\Nalozi.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\hr\Nalozi.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.csprojResolveAssemblyReference.cache
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.co-FR.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.hr.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\co-FR\Nalozi.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\hr\Nalozi.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.TrustInfo.xml
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe.manifest
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.application
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.pdb
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.config
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe.manifest
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.application
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.exe
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\Nalozi.pdb
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\bin\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.Properties.Resources.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.co-FR.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Nalozi.hr.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.TrustInfo.xml
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe.manifest
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.application
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.exe
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Nalozi\WindowsFormsApplication1\obj\Release\Nalozi.pdb

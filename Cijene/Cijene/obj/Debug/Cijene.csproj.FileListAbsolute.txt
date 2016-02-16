@@ -1,0 +1,17 @@
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\bin\Debug\Cijene.exe.config
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\bin\Debug\Cijene.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\bin\Debug\Cijene.pdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\obj\Debug\Cijene.Form1.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\obj\Debug\Cijene.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\obj\Debug\Cijene.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\obj\Debug\Cijene.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Cijene\Cijene\obj\Debug\Cijene.pdb
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\bin\Debug\Cijene.exe.config
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Debug\Cijene.exe
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Debug\Cijene.pdb
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\bin\Debug\Cijene.exe
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\bin\Debug\Cijene.pdb
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Debug\Cijene.csprojResolveAssemblyReference.cache
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Debug\Cijene.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Debug\Cijene.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Debug\Cijene.FormHome.resources

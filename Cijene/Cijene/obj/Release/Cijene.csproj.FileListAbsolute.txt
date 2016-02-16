@@ -1,0 +1,17 @@
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\bin\Release\Cijene.exe.config
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\bin\Release\Cijene.exe
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\bin\Release\Cijene.pdb
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Release\Cijene.FormHome.resources
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Release\Cijene.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Release\Cijene.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Release\Cijene.exe
+E:\Drive\posao\programi\Projects\Program Set\Cijene\Cijene\obj\Release\Cijene.pdb
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\bin\Release\Cijene.exe.config
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\bin\Release\Cijene.exe
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\bin\Release\Cijene.pdb
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.FormHome.resources
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.Properties.Resources.resources
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.exe
+C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.pdb

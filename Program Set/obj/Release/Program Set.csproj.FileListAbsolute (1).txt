@@ -1,0 +1,40 @@
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\obj\Release\Program Set.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\obj\Release\Program_Set.Form1.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\obj\Release\Program_Set.FormSync.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\obj\Release\Program_Set.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\obj\Release\Program Set.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\bin\Release\Program Set.exe.config
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Program Set.exe.config
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\BazaKombi.mdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\DataBase.mdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\FormFirma.resx
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\FormFirma.cs
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\FormFirma.Designer.cs
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Program Set.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Program Set.application
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Program Set.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Program Set.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Kombiji.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Nalozi.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Ponuda.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\raspored.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\AP-Balažinec.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Kombiji.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Nalozi.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\Ponuda.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\raspored.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\bin\Release\hr\Nalozi.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program_Set.Form1.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program_Set.FormSync.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program_Set.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.TrustInfo.xml
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.application
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\obj\Release\Program Set.pdb

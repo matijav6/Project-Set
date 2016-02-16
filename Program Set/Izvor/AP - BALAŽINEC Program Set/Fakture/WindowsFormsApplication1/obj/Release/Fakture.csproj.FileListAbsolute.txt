@@ -1,0 +1,136 @@
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\BazaKombi.mdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.config
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.application
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.pdb
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirma.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaEng.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaNjem.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaSlo.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPoBrojuFakture.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSpremanje.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSveukupno.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormIzmjena.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPojedinacno.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUcitavanje.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUpute.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.co-FR.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.hr.resources
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.TrustInfo.xml
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.application
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\Visual Studio 2013\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.pdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\BazaKombi.mdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.config
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.application
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.pdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.pdb
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirma.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaEng.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaNjem.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaSlo.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPoBrojuFakture.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSpremanje.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSveukupno.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormIzmjena.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPojedinacno.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUcitavanje.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUpute.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Properties.Resources.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.co-FR.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.hr.resources
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.TrustInfo.xml
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe.manifest
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.application
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\Visual Studio 2015\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.pdb
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\BazaKombi.mdb
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.config
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.manifest
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.application
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.pdb
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\co-FR\AP-Balažinec.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\hr\AP-Balažinec.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.exe
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.pdb
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csprojResolveAssemblyReference.cache
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirma.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaEng.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaNjem.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaSlo.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPretrazivanje.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSpremanje.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSveukupno.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormIzmjena.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPojedinacno.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUcitavanje.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUpute.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.co-FR.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.hr.resources
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\co-FR\AP-Balažinec.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\hr\AP-Balažinec.resources.dll
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.TrustInfo.xml
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe.manifest
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.application
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe
+E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.pdb
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\BazaKombi.mdb
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.config
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe.manifest
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.application
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\AP-Balažinec.pdb
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.exe
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\bin\Release\Kombiji.pdb
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirma.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaEng.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaNjem.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormNovaFirmaSlo.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPretrazivanje.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSpremanje.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormSveukupno.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormIzmjena.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormPojedinacno.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUcitavanje.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.FormUpute.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.Properties.Resources.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.co-FR.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\WindowsFormApplication1.AP_Balažinec.hr.resources
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\Fakture.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.TrustInfo.xml
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe.manifest
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.application
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.exe
+C:\Users\Matija\Documents\ProjectSet\Program Set\Izvor\AP - BALAŽINEC Program Set\Fakture\WindowsFormsApplication1\obj\Release\AP-Balažinec.pdb

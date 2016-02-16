@@ -1,0 +1,17 @@
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\bin\Debug\PrintCMR.exe.config
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\bin\Debug\PrintCMR.exe.manifest
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\bin\Debug\PrintCMR.application
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\bin\Debug\PrintCMR.exe
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\bin\Debug\PrintCMR.pdb
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.csprojResolveAssemblyReference.cache
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR_nmspace.FormSpremanje.resources
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.TrustInfo.xml
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.exe.manifest
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.application
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.exe
+E:\Drive\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.pdb
+D:\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\bin\Debug\PrintCMR.exe.config
+D:\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.exe
+D:\posao\programi\Projects\Program Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.pdb

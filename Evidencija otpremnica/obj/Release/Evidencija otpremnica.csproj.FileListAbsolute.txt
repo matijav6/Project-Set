@@ -1,0 +1,24 @@
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Release\EvidencijaOtpremnica.mdb
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Release\Evidencija otpremnica.exe.config
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Release\Evidencija otpremnica.exe
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Release\Evidencija otpremnica.pdb
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija otpremnica.csprojResolveAssemblyReference.cache
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Form1.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Form_Dodaj.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Form_Pregled.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija otpremnica.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija otpremnica.exe
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Release\Evidencija otpremnica.pdb
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\bin\Release\EvidencijaOtpremnica.mdb
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\bin\Release\Evidencija otpremnica.exe.config
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\bin\Release\Evidencija otpremnica.exe
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\bin\Release\Evidencija otpremnica.pdb
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija otpremnica.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Form1.resources
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Form_Dodaj.resources
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Form_Pregled.resources
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija_otpremnica.Properties.Resources.resources
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija otpremnica.csproj.GenerateResource.Cache
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija otpremnica.exe
+C:\Users\Matija\Documents\ProjectSet\Evidencija otpremnica\obj\Release\Evidencija otpremnica.pdb

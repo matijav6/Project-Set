@@ -1,0 +1,12 @@
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Debug\EvidencijaOtpremnica.mdb
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Debug\Evidencija otpremnica.exe.config
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Debug\Evidencija otpremnica.exe
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\bin\Debug\Evidencija otpremnica.pdb
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.csprojResolveAssemblyReference.cache
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Form1.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Form_Dodaj.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Form_Pregled.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Properties.Resources.resources
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.csproj.GenerateResource.Cache
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.exe
+E:\Drive\posao\programi\Projects\Program Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.pdb
