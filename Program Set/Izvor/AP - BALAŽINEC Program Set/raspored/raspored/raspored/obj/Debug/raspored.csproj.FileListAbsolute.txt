@@ -105,3 +105,16 @@ E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC P
 E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.application
 E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.exe
 E:\Drive\posao\programi\Projects\Program Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.pdb
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.exe.config
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.exe.manifest
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.application
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.exe
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.pdb
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.Form1.resources
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.Properties.Resources.resources
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.csproj.GenerateResource.Cache
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.exe.manifest
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.application
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.exe
+C:\Users\Matija\Desktop\git\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.pdb

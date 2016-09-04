@@ -107,9 +107,11 @@
             this.textBoxPDV = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxRabat = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.textBoxPozicija = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet)).BeginInit();
@@ -349,7 +351,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(201, 479);
+            this.label11.Location = new System.Drawing.Point(201, 546);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(188, 29);
             this.label11.TabIndex = 52;
@@ -369,7 +371,7 @@
             // textBoxBrFakture
             // 
             this.textBoxBrFakture.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxBrFakture.Location = new System.Drawing.Point(206, 511);
+            this.textBoxBrFakture.Location = new System.Drawing.Point(206, 578);
             this.textBoxBrFakture.MaxLength = 13;
             this.textBoxBrFakture.Name = "textBoxBrFakture";
             this.textBoxBrFakture.Size = new System.Drawing.Size(117, 47);
@@ -399,7 +401,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(200, 391);
+            this.label12.Location = new System.Drawing.Point(200, 458);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(125, 31);
             this.label12.TabIndex = 50;
@@ -438,7 +440,7 @@
             // textBoxEur
             // 
             this.textBoxEur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxEur.Location = new System.Drawing.Point(171, 266);
+            this.textBoxEur.Location = new System.Drawing.Point(171, 333);
             this.textBoxEur.Name = "textBoxEur";
             this.textBoxEur.Size = new System.Drawing.Size(139, 29);
             this.textBoxEur.TabIndex = 13;
@@ -448,17 +450,17 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label28.Location = new System.Drawing.Point(167, 243);
+            this.label28.Location = new System.Drawing.Point(167, 310);
             this.label28.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(117, 24);
+            this.label28.Size = new System.Drawing.Size(116, 24);
             this.label28.TabIndex = 60;
-            this.label28.Text = "Stopa eura:";
+            this.label28.Text = "Tečaj eura:";
             // 
             // textBoxDatum
             // 
             this.textBoxDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxDatum.Location = new System.Drawing.Point(206, 425);
+            this.textBoxDatum.Location = new System.Drawing.Point(206, 492);
             this.textBoxDatum.MaxLength = 13;
             this.textBoxDatum.Name = "textBoxDatum";
             this.textBoxDatum.Size = new System.Drawing.Size(195, 47);
@@ -780,7 +782,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label6.Location = new System.Drawing.Point(167, 81);
+            this.label6.Location = new System.Drawing.Point(167, 148);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 24);
@@ -790,7 +792,7 @@
             // textBoxRelacija
             // 
             this.textBoxRelacija.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxRelacija.Location = new System.Drawing.Point(171, 108);
+            this.textBoxRelacija.Location = new System.Drawing.Point(171, 175);
             this.textBoxRelacija.Multiline = true;
             this.textBoxRelacija.Name = "textBoxRelacija";
             this.textBoxRelacija.Size = new System.Drawing.Size(240, 48);
@@ -838,7 +840,7 @@
             // textBoxJM
             // 
             this.textBoxJM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxJM.Location = new System.Drawing.Point(171, 189);
+            this.textBoxJM.Location = new System.Drawing.Point(171, 256);
             this.textBoxJM.Name = "textBoxJM";
             this.textBoxJM.Size = new System.Drawing.Size(139, 29);
             this.textBoxJM.TabIndex = 12;
@@ -848,7 +850,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label14.Location = new System.Drawing.Point(167, 162);
+            this.label14.Location = new System.Drawing.Point(167, 229);
             this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(164, 24);
@@ -858,7 +860,7 @@
             // textBoxPDV
             // 
             this.textBoxPDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxPDV.Location = new System.Drawing.Point(171, 43);
+            this.textBoxPDV.Location = new System.Drawing.Point(171, 108);
             this.textBoxPDV.Name = "textBoxPDV";
             this.textBoxPDV.Size = new System.Drawing.Size(123, 29);
             this.textBoxPDV.TabIndex = 10;
@@ -868,7 +870,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label15.Location = new System.Drawing.Point(167, 16);
+            this.label15.Location = new System.Drawing.Point(167, 81);
             this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 24);
@@ -877,6 +879,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBoxRabat);
+            this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Controls.Add(this.textBoxPozicija);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.textBoxRegBroj);
@@ -918,6 +922,44 @@
             this.groupBox1.Text = "Fakture";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // textBoxRabat
+            // 
+            this.textBoxRabat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxRabat.Location = new System.Drawing.Point(171, 49);
+            this.textBoxRabat.Name = "textBoxRabat";
+            this.textBoxRabat.Size = new System.Drawing.Size(123, 29);
+            this.textBoxRabat.TabIndex = 67;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label29.Location = new System.Drawing.Point(167, 22);
+            this.label29.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(69, 24);
+            this.label29.TabIndex = 68;
+            this.label29.Text = "Rabat:";
+            // 
+            // textBoxPozicija
+            // 
+            this.textBoxPozicija.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxPozicija.Location = new System.Drawing.Point(171, 406);
+            this.textBoxPozicija.Name = "textBoxPozicija";
+            this.textBoxPozicija.Size = new System.Drawing.Size(139, 29);
+            this.textBoxPozicija.TabIndex = 14;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label13.Location = new System.Drawing.Point(167, 383);
+            this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(88, 24);
+            this.label13.TabIndex = 66;
+            this.label13.Text = "Pozicija:";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -928,25 +970,6 @@
             this.label10.Size = new System.Drawing.Size(77, 24);
             this.label10.TabIndex = 44;
             this.label10.Text = "Mjesto:";
-            // 
-            // textBoxPozicija
-            // 
-            this.textBoxPozicija.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxPozicija.Location = new System.Drawing.Point(171, 339);
-            this.textBoxPozicija.Name = "textBoxPozicija";
-            this.textBoxPozicija.Size = new System.Drawing.Size(139, 29);
-            this.textBoxPozicija.TabIndex = 14;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label13.Location = new System.Drawing.Point(167, 316);
-            this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 24);
-            this.label13.TabIndex = 66;
-            this.label13.Text = "Pozicija:";
             // 
             // FormNovaFirmaNjem
             // 
@@ -1061,5 +1084,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxPozicija;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBoxRabat;
+        private System.Windows.Forms.Label label29;
     }
 }

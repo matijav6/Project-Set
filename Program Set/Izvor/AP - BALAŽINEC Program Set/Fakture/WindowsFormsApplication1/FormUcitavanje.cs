@@ -25,22 +25,22 @@ namespace WindowsFormApplication1
         public string OtvorenaFaktura { get; set; }
         public string[] dirs { get; set; }
         string STRtražiRelaciju;
+        string STRte;
         string ImeRelacije;
         int provjeraRelacija = 0;
         
         public void UcitavanjeFaktura()
         {
             try
-            {
-                // umetanje vrijednosti
+            {                // umetanje vrijednosti
                 ExcelObj = new Microsoft.Office.Interop.Excel.Application();
                 excelApp = new Excel.Application();
                 theWorkbook = ExcelObj.Workbooks.Open(OtvorenaFaktura, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true);
                 sheets = theWorkbook.Worksheets;
                 worksheet = (Microsoft.Office.Interop.Excel.Worksheet)sheets.get_Item(1);
-
+                
                 //cijena                 
-                for (int red = 28; red <= 31; red++)
+                for (int red = 26; red <= 31; red++)
                 {
                     var traži = (worksheet.Cells[red, 6] as Microsoft.Office.Interop.Excel.Range).Value;
                     string STRtraži = Convert.ToString(traži);
@@ -50,6 +50,35 @@ namespace WindowsFormApplication1
                     if (((float.TryParse(n, out val))) && STRtraži.Length != 0)
                     {
                         File.WriteAllText(Application.StartupPath + "\\Cijena", STRtraži);
+
+                        //rabat i PDV
+                        try
+                        {
+                            var te = (worksheet.Cells[red, 10] as Microsoft.Office.Interop.Excel.Range).Value;
+                            STRte = Convert.ToString(te);
+                            if (STRte.Length == 0)
+                            {
+                                var rabata = (worksheet.Cells[red, 9] as Microsoft.Office.Interop.Excel.Range).Value;
+                                string STRrabata = Convert.ToString(rabata);
+
+                            }
+                        }
+                        catch {
+                            var rabata = (worksheet.Cells[red, 9] as Microsoft.Office.Interop.Excel.Range).Value;
+                            string STRrabata = Convert.ToString(rabata);
+                            File.WriteAllText(Application.StartupPath + "\\PDV", STRrabata);
+                            goto dalje;
+                        }
+
+
+                        var rabat = (worksheet.Cells[red, 9] as Microsoft.Office.Interop.Excel.Range).Value;
+                            string STRrabat = Convert.ToString(rabat);
+                            File.WriteAllText(Application.StartupPath + "\\rabat", STRrabat);
+
+                            var PDV = (worksheet.Cells[red, 10] as Microsoft.Office.Interop.Excel.Range).Value;
+                            string STRPDV = Convert.ToString(PDV);
+                            File.WriteAllText(Application.StartupPath + "\\PDV", STRPDV);
+                        dalje:
                         break;
                     }
                 }
@@ -94,7 +123,7 @@ namespace WindowsFormApplication1
                                 //Ne može prenašati vrijednosti u aktivni form
                                 File.Delete(Application.StartupPath + "\\RelacijaIme");
                                 File.WriteAllText(Application.StartupPath + "\\StupacRelacija", stupac.ToString());
-                                File.WriteAllText(Application.StartupPath + "\\Relacija", STRtražiRelaciju);
+                               File.WriteAllText(Application.StartupPath + "\\Relacija", STRtražiRelaciju);
                                 File.WriteAllText(Application.StartupPath + "\\RedRelacija", red.ToString());
                                 provjeraRelacija++;
                                 goto kraj;
@@ -118,11 +147,13 @@ namespace WindowsFormApplication1
                 this.Refresh();
 
             }
-            catch
+            catch(Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 if (provjeraRelacija < 2)
                 {
                     MessageBox.Show("Došlo je do otvaranja neočekivane fakture,program će se resetirati.");
+                    
 
                     File.AppendAllText(Application.StartupPath + "\\Fakture\\FaktureNepodobneZaUcitavanje", Environment.NewLine + OtvorenaFaktura);
                     Zatvaranje();
@@ -173,18 +204,18 @@ namespace WindowsFormApplication1
                 UcitavanjeFaktura();
                 this.Close();
             }
-            //catch (Exception ex)
+            //catch (exception ex)
             //{
-            //    MessageBox.Show("Došlo je do greške!");
-            //    MessageBox.Show(ex.ToString());
-            //    File.Delete(Application.StartupPath + "\\Cijena");
-            //    File.Delete(Application.StartupPath + "\\Relacija");
-            //    File.Delete(Application.StartupPath + "\\StupacRelacija");
-            //    File.Delete(Application.StartupPath + "\\RedRelacija");
-            //    File.Delete(Application.StartupPath + "\\RelacijaIme");
-            //    File.Delete(Application.StartupPath + "\\Pozicija");
-            //    Zatvaranje();
-            //    Application.Restart();
+            //    messagebox.show("došlo je do greške!");
+            //    messagebox.show(ex.tostring());
+            //    file.delete(application.startuppath + "\\cijena");
+            //    file.delete(application.startuppath + "\\relacija");
+            //    file.delete(application.startuppath + "\\stupacrelacija");
+            //    file.delete(application.startuppath + "\\redrelacija");
+            //    file.delete(application.startuppath + "\\relacijaime");
+            //    file.delete(application.startuppath + "\\pozicija");
+            //    zatvaranje();
+            //    application.restart();
             //}
         }
 

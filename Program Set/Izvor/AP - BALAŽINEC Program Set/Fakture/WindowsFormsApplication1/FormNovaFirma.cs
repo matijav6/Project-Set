@@ -103,14 +103,17 @@ namespace WindowsFormApplication1
         }
         public void SpremanjeFaktura()
         {
+            string putanjaDoNoveFakture;
             string put = System.IO.File.ReadAllText(Application.StartupPath + "\\Fakture\\PutFakture.txt");
-            string putanjaDoNoveFakture = Application.StartupPath + "\\Fakture\\NOVA.xlsx";
+            if (textBoxRabat.Text.Length != 0)   putanjaDoNoveFakture = Application.StartupPath + "\\Fakture\\NOVA_RABAT.xlsx";
+            else putanjaDoNoveFakture = Application.StartupPath + "\\Fakture\\NOVA.xlsx";
             Excel.Application excelApp = new Excel.Application();
 
             if (radioPlaceno.Checked == true || radioNePlaceno.Checked == true)
             {
                 Microsoft.Office.Interop.Excel.Application ExcelObj = null;
                 ExcelObj = new Microsoft.Office.Interop.Excel.Application();
+                
                 Microsoft.Office.Interop.Excel.Workbook theWorkbook = ExcelObj.Workbooks.Open(putanjaDoNoveFakture, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true);
                 Microsoft.Office.Interop.Excel.Sheets sheets = theWorkbook.Worksheets;
                 Microsoft.Office.Interop.Excel.Worksheet worksheet = (Microsoft.Office.Interop.Excel.Worksheet)sheets.get_Item(1);
@@ -137,13 +140,13 @@ namespace WindowsFormApplication1
                 rowIndex = 30; colIndex = 6;
                 excelApp.Cells[rowIndex, colIndex] = textBoxCijena.Text;
 
-                rowIndex = 29; colIndex = 1;
+                rowIndex = 28; colIndex = 1;
                 excelApp.Cells[rowIndex, colIndex] = textBoxRelacija.Text;
 
                 rowIndex = 30; colIndex = 4;
                 excelApp.Cells[rowIndex, colIndex] = textBoxJM.Text;
 
-                rowIndex = 32; colIndex = 3;
+                rowIndex = 31; colIndex = 2;
                 excelApp.Cells[rowIndex, colIndex] = textBoxPozicija.Text;
 
                 rowIndex = 18; colIndex = 1;
@@ -155,12 +158,26 @@ namespace WindowsFormApplication1
                 rowIndex = 20; colIndex = 1;
                 excelApp.Cells[rowIndex, colIndex] = textBoxMjesto.Text;
 
-                rowIndex = 30; colIndex = 9;
-                string PDV = textBoxPDV.Text.Replace("%", "");
-                excelApp.Cells[rowIndex, colIndex] = PDV + "%";
+                //ako je s rabatom
+                if (textBoxRabat.Text.Length != 0)
+                {
+                    rowIndex = 30; colIndex = 9;
+                    double rabat = Convert.ToDouble(textBoxRabat.Text);
+                    excelApp.Cells[rowIndex, colIndex] = rabat / 100;
 
+                    rowIndex = 30; colIndex = 10;
+                    double PDVa = Convert.ToDouble(textBoxPDV.Text);
+                    excelApp.Cells[rowIndex, colIndex] = PDVa / 100;
+                }
 
-                var datum = Convert.ToDateTime(textBoxDatum.Text);
+                else
+                {
+                    rowIndex = 30; colIndex = 9;
+                    double PDV = Convert.ToDouble(textBoxPDV.Text);
+                    excelApp.Cells[rowIndex, colIndex] = PDV / 100;
+                }
+
+                var datum = Convert.ToDateTime(textBoxDVO.Text);
                 string datumPrikaz = datum.ToShortDateString();
 
                 int mjesec = datum.Month;
@@ -173,8 +190,8 @@ namespace WindowsFormApplication1
                 string dir = dira.Replace("\\\\", "\\");
                 string dirNe = dirNea.Replace("\\\\", "\\");
 
-                spremanje = dir + textBoxBrFakture.Text + "  " + textBoxDatum.Text + ".xlsx";
-                spremanjeNe = dirNe + textBoxBrFakture.Text + "  " + textBoxDatum.Text + ".xlsx";
+                spremanje = dir + textBoxBrFakture.Text + "  " + textBoxDVO.Text + ".xlsx";
+                spremanjeNe = dirNe + textBoxBrFakture.Text + "  " + textBoxDVO.Text + ".xlsx";
 
                 System.IO.Directory.CreateDirectory(dirNe);
                 System.IO.Directory.CreateDirectory(dir);
@@ -234,6 +251,7 @@ namespace WindowsFormApplication1
             {
                 MessageBox.Show("Niste označili da li je plačeno ili ne!", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+           
         }
         public void Zbrajanje()
         {
@@ -435,6 +453,7 @@ namespace WindowsFormApplication1
                 SigurnosnoSpremanje();
                 SpremanjeFaktura();
                 SpremanjeKombi();
+            this.Close();
         //    }
         //    catch
         //    {

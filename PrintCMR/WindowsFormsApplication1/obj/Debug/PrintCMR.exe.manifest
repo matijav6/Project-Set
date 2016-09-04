@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrintCMR.exe" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrintCMR.exe" size="14848">
       <assemblyIdentity name="PrintCMR" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EwPxcTj+kCKzJPoOCmYz4jnb7C2Km56GnkFh6Vqv7lo=</dsig:DigestValue>
+        <dsig:DigestValue>q9RHKMW0y5sjqVcy2Cyk216AXvwmuQacR54T/TEmgpA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PrintCMR.exe.config" size="636">
+  <file name="PrintCMR.exe.config" size="623">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ANYEAwAP1Bnuv05xDesnyfcnXUt1HXnNM9m7GQAo59k=</dsig:DigestValue>
+      <dsig:DigestValue>nIpIrnKWOBRh+7Y1uwM6KjaIG1Hiz5xvs+/BFvlNXjo=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

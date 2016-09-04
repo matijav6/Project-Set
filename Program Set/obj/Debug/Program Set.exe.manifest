@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AP-Balažinec.exe" size="588288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AP-Balažinec.exe" size="596480">
       <assemblyIdentity name="AP-Balažinec" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xU/gzNymh+fmRg45Tv7NXfopjiIQ9fPf1nn8sqSflL8=</dsig:DigestValue>
+        <dsig:DigestValue>PpH82HG7O/LnjItBGn1KJalMlG8CbS/AVrKwPZzU9Fk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oabEjEP7hSwqsoP0b+gkHsa2uzAXkNQsCB9gguJeBdg=</dsig:DigestValue>
+        <dsig:DigestValue>Q2pUOrILaeSeU1dTyDfzCB3LyexyUW/r/GAuDNnPZi4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>f79cFuLVl4Z2+aLg8fFMsI+m/c06Xat5E96Pdi2JY/Y=</dsig:DigestValue>
+        <dsig:DigestValue>P2QZbob8FyGLBxxNoxZNTQ/bzbjXGPUYaj98aqNzu3A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>e9lPEJpxD5nc8/uV1LRkI6vX91DBKe7W6mvJwuzwbXk=</dsig:DigestValue>
+        <dsig:DigestValue>Dh3P4rHvEcWgngH4V0bqg+R/BkROpokn5GQ0aF2D+kA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,19 +98,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uLCzS0AjMKTwhNMEnhJOgS+kduY41/aqlS+adkvaEGE=</dsig:DigestValue>
+        <dsig:DigestValue>vyYJYt9a7rtfRiYE/P69o+3E1I8zxe3H1wkePtnamWI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kombiji.exe" size="399872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kombiji.exe" size="400384">
       <assemblyIdentity name="Kombiji" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EElneMO8+qNag/iHpDtdny6gLPaQn7FxjWQ2x/4jm3I=</dsig:DigestValue>
+        <dsig:DigestValue>D0BWwa/db/y/7Je95kaFZj7H51el7OzLGqwShbg+B4w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SfNj8opRPD87aXFjsMB0ilZJyggTXO6V04YemZ8X9bY=</dsig:DigestValue>
+        <dsig:DigestValue>DHyu8MLRl+Yril/mAbn3wVhSSPf/ukQ+rnw2ofq1ucw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -134,7 +134,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rh/oqcx5hVD8mrF137hjYr8CfIB9WfofiO3eq9eZ5/E=</dsig:DigestValue>
+        <dsig:DigestValue>T5uY+fubUVJhtbOY6Lgt6D4cJQajoSkjj3xs3VGBGW8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,7 +146,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WcBhAV+rLyx1RAEFUuSGtIZeQz8ZpV4ZHGEed0Wnk/U=</dsig:DigestValue>
+        <dsig:DigestValue>7QZ4UYfB0EbgfZghTnsKLYM9XT0ujqZZvnAElp2eTJI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,31 +158,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0XMGfjUD3Etxgn3WiYY9jNoUERu1TUNFsydN57YaNMk=</dsig:DigestValue>
+        <dsig:DigestValue>fWg0TquQPhch/ySaHnbtb3wczmQwffk1z2k09Z7igx0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrintCMR.exe" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrintCMR.exe" size="14848">
       <assemblyIdentity name="PrintCMR" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EwPxcTj+kCKzJPoOCmYz4jnb7C2Km56GnkFh6Vqv7lo=</dsig:DigestValue>
+        <dsig:DigestValue>q9RHKMW0y5sjqVcy2Cyk216AXvwmuQacR54T/TEmgpA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Program Set.exe" size="734208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Program Set.exe" size="734720">
       <assemblyIdentity name="Program Set" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8ittk/mCchsIypi+odVsKZroeUI6RurvQ/GGXyCVdyo=</dsig:DigestValue>
+        <dsig:DigestValue>c4UUZUpUuQb/9awuOffAf9WjybsTOdD75hTVF/Tjjz0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -194,17 +194,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4hF7oG3RajJV3CK9HwW9v7TXIEcsu34/E4Msr2XsBjw=</dsig:DigestValue>
+        <dsig:DigestValue>GD59Ab1AB9gyg58vO1EIetoIk0y5TPcoNZ/opHn59T4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Program Set.exe.config" size="184">
+  <file name="Program Set.exe.config" size="178">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>FqWy0dfMmRS85zkU1NlW07p6LsNOPUHodvLiZcFdgJY=</dsig:DigestValue>
+      <dsig:DigestValue>pOyyBcweXMlNB4Kmf4v1ezhl5BH5FT8d9w+toOcdxD4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Program_Set_icon.ico" size="355574">

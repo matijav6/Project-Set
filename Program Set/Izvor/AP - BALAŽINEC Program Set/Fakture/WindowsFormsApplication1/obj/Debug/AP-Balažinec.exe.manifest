@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AP-Balažinec.exe" size="588288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AP-Balažinec.exe" size="596480">
       <assemblyIdentity name="AP-Balažinec" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WjDk40AB5BXsc/NJHBepOMv2QN8ibAqFZnsGaalRvEs=</dsig:DigestValue>
+        <dsig:DigestValue>PpH82HG7O/LnjItBGn1KJalMlG8CbS/AVrKwPZzU9Fk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GxksuiRUnDlBm0buNUp9W3XqWu+LVnE4K07QEp7uG0Y=</dsig:DigestValue>
+        <dsig:DigestValue>Q2pUOrILaeSeU1dTyDfzCB3LyexyUW/r/GAuDNnPZi4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Keq5+9YaSs29AM7CBjWtLRvANk+nYGKHsMK/N7KjyHc=</dsig:DigestValue>
+        <dsig:DigestValue>P2QZbob8FyGLBxxNoxZNTQ/bzbjXGPUYaj98aqNzu3A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,17 +85,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7Q6sduQNKfYn3DiUKTCd0tyaKnmGtMZDo4/sygUoaC8=</dsig:DigestValue>
+        <dsig:DigestValue>D0BWwa/db/y/7Je95kaFZj7H51el7OzLGqwShbg+B4w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AP-Balažinec.exe.config" size="1253">
+  <file name="AP-Balažinec.exe.config" size="1234">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>P6gtDPNcKp9R+/mRi4/1nnWtXpkHbZbCuzZ88AmQZA4=</dsig:DigestValue>
+      <dsig:DigestValue>QBkxiZFUBlLgkB5OjdojvFwK8MDLIZRoWSyCxhutxAc=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

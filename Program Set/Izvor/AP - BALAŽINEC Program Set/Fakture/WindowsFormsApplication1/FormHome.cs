@@ -19,7 +19,10 @@ namespace WindowsFormApplication1
         public int pom { get; set; }
         public string UcitavanjeCijena { get; set; }
         public string UcitavanjeRelacija { get; set; }
+
+        public string relac;
         string Browse;
+        string[] vozaci;
         string FaktureNepodobneZaUcitavanje;
         string put;
         string Otvorenafaktura;
@@ -98,8 +101,22 @@ namespace WindowsFormApplication1
                 textBoxCijena.Text = File.ReadAllText(Application.StartupPath + "\\Cijena");
                 textBoxRelacija.Text = File.ReadAllText(Application.StartupPath + "\\Relacija");
                 textBoxPozicija.Text = File.ReadAllText(Application.StartupPath + "\\Pozicija");
+                if(File.Exists(Application.StartupPath + "\\rabat"))
+                {
+                    textBoxRabat.Enabled = true;
+                    string rabat = File.ReadAllText(Application.StartupPath + "\\rabat");
+                    double dblRabat = Convert.ToDouble(rabat) * 100;
+                    textBoxRabat.Text = Convert.ToString(dblRabat) + "%";
+                }
+                string PDV = File.ReadAllText(Application.StartupPath + "\\PDV");
+                double dblPDV = Convert.ToDouble(PDV) * 100;
+                textBoxPDV.Text = Convert.ToString(dblPDV) + "%";
+
                 File.Delete(Application.StartupPath + "\\Cijena");
                 File.Delete(Application.StartupPath + "\\Relacija");
+                File.Delete(Application.StartupPath + "\\rabat");
+                File.Delete(Application.StartupPath + "\\PDV");
+
             }
             catch { }
         }
@@ -182,6 +199,7 @@ namespace WindowsFormApplication1
                 else
                 {
                     listBox_spremljeneFakture.Hide();
+                    groupBox3.Hide();
                     listBox_spremljeneFakture.Items.Clear();
                     button_Zatvori.Hide();
                     button_reset.Show();
@@ -245,7 +263,7 @@ namespace WindowsFormApplication1
                 if (NovaRuta == true)
                 {                   
                     listBox_novaRuta.Hide();
-
+                    groupBox3.Hide();
                     //dodavanje putanje, to je dovoljno-> Fakture\Firma\
                     formSpremanje.PutanjaOtvoreneFakture = put + listBox_novaRuta.SelectedItem.ToString();
 
@@ -274,6 +292,7 @@ namespace WindowsFormApplication1
         }       
         private void spremi_Click(object sender, EventArgs e)
         {
+           
             if (pom >= 1)
             {
                 MessageBox.Show("Već ste jedanput kliknuli! Klikni na RESET!");
@@ -283,9 +302,26 @@ namespace WindowsFormApplication1
             {
                 try
                 {
+                    textBoxRabat.Text = textBoxRabat.Text.Replace("%", "");
+                    textBoxPDV.Text=  textBoxPDV.Text.Replace("%", "");
+
                     ProvjeraBrojaFakture();
 
-                if (ProvjeraFakture <= 0)
+                    //dodavanje novog vozaca za combobox
+                    bool vozacBool = false;
+                    foreach (string vozac in vozaci)
+                    {
+                        if (vozac == comboBoxVozač.Text.ToString())
+                            vozacBool = true;
+                    }
+                    if (!vozacBool)
+                    {
+                        System.IO.File.AppendAllText(Application.StartupPath + "\\Fakture\\vozaci", Environment.NewLine);
+                        System.IO.File.AppendAllText(Application.StartupPath + "\\Fakture\\vozaci", comboBoxVozač.Text.ToString());
+                        
+                    }
+
+                    if (ProvjeraFakture <= 0)
                 {
                     // If database doesn't exists, then copy original with name in comboBox1 
                     if (!comboBoxKombi.Items.Contains(comboBoxKombi.Text))
@@ -301,6 +337,7 @@ namespace WindowsFormApplication1
                     if (textBoxVozacu.Text.Length == 0) textBoxVozacu.Text = "0";
                     if (textBoxNama.Text.Length == 0) textBoxNama.Text = "0";
                     if (textBoxNapomena.Text.Length == 0) textBoxNapomena.Text = "-";
+                    if (textBoxRabat.Text.Length == 0) textBoxRabat.Text = "0";
 
                         SigurnosnoSpremanje();
 
@@ -309,6 +346,15 @@ namespace WindowsFormApplication1
                         formSpremanje.Kolicina = textBoxKolicina.Text;
                         formSpremanje.BrojFakture = textBrFakture.Text;
 
+                       
+                        double rab = Convert.ToDouble(textBoxRabat.Text);
+                        rab /= 100;
+                        formSpremanje.rabat = rab;
+
+                        double pdv = Convert.ToDouble(textBoxPDV.Text);
+                        pdv /= 100;
+                        formSpremanje.PDV = pdv.ToString();
+                      // textBoxCijenaTure.Text = (Convert.ToDouble(textBoxCestarina) + Convert.ToDouble(textBoxNama) + Convert.ToDouble(textBoxVozacu) + Convert.ToDouble(textBoxGorivo)).ToString();
                         formSpremanje.ShowDialog();
                     }
                 ProvjeraFakture = 0;
@@ -423,7 +469,9 @@ namespace WindowsFormApplication1
         }
 
         private void AP_Balažinec_Load(object sender, EventArgs e)
-        {            
+        {
+            groupBox3.Hide();
+            textBoxRabat.Enabled = false;
             tableLayoutPanel1.Hide();
 
             radioNePlaceno.Checked = true;
@@ -435,6 +483,12 @@ namespace WindowsFormApplication1
             button_Zatvori.Hide();
             try
             {
+                //učitavanje vozača u combobox za odabir
+                vozaci = System.IO.File.ReadAllLines(Application.StartupPath + "\\Fakture\\vozaci");
+                foreach( string vozac in vozaci)
+                {
+                    comboBoxVozač.Items.Add(vozac);
+                }
                 //čitaj imena fakture da ne bi došlo do redundancije
                 data = System.IO.File.ReadAllLines(Application.StartupPath + "\\Fakture\\data");
 
@@ -518,6 +572,7 @@ namespace WindowsFormApplication1
             //checkBoxSamoFaktura.Hide();
             //checkBoxSamoPredlosci.Hide();
             //buttonPopuniPremaPredlosku.Hide();
+            groupBox3.Show();
             button_Zatvori.Show();
             button_reset.Hide();
 
@@ -539,6 +594,7 @@ namespace WindowsFormApplication1
 
         private void button5_Click(object sender, EventArgs e)
         {
+            groupBox3.Show();
             textBoxRelacija.Enabled = false;
             checkBoxSamoFaktura.Hide();
             checkBoxSamoPredlosci.Hide();
@@ -561,6 +617,7 @@ namespace WindowsFormApplication1
 
         private void button6_Click(object sender, EventArgs e)
         {
+            groupBox3.Hide();
             listBox_novaRuta.Hide();
             listBox_spremljeneFakture.Hide();
             button_reset.Show();
@@ -575,6 +632,7 @@ namespace WindowsFormApplication1
         {
             try
             {
+                Process.Start(Application.StartupPath + "\\Fakture\\SyncToy.bat");
                 foreach (Process proc in Process.GetProcessesByName("EXCEL"))
                 {
                     proc.Kill();
@@ -784,6 +842,26 @@ namespace WindowsFormApplication1
         private void listBox_spremljeneFakture_DoubleClick(object sender, EventArgs e)
         {
             browsanjee();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void radioNePlaceno_CheckedChanged(object sender, EventArgs e)

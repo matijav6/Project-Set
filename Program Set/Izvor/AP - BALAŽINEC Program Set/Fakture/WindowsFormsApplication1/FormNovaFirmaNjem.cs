@@ -105,8 +105,17 @@ namespace WindowsFormApplication1
         }
         public void SpremanjeFaktura()
         {
+            textBoxPDV.Text = textBoxPDV.Text.Replace("%", "");
+            textBoxRabat.Text = textBoxRabat.Text.Replace("%", "");
+
+            string putanjaDoNoveFakture;
+
             string put = System.IO.File.ReadAllText(Application.StartupPath + "\\Fakture\\PutFakture.txt");
-            string putanjaDoNoveFakture = Application.StartupPath + "\\Fakture\\NOVA_NJEM.xlsx";
+            if (textBoxRabat.Text.Length != 0)
+                putanjaDoNoveFakture = Application.StartupPath + "\\Fakture\\NOVA_RABAT_NJEM.xlsx";
+
+            else putanjaDoNoveFakture = Application.StartupPath + "\\Fakture\\NOVA_NJEM.xlsx";
+
             Excel.Application excelApp = new Excel.Application();
 
             if (radioPlaceno.Checked == true || radioNePlaceno.Checked == true)
@@ -134,15 +143,19 @@ namespace WindowsFormApplication1
                 excelApp.Cells[rowIndex, colIndex] = textBoxRegBroj.Text;
 
                 rowIndex = 30; colIndex = 5;
+                if (textBoxRabat.Text.Length != 0) rowIndex = 27;
                 excelApp.Cells[rowIndex, colIndex] = textBoxKolicina.Text;
 
                 rowIndex = 30; colIndex = 6;
+                if (textBoxRabat.Text.Length != 0) rowIndex = 27;
                 excelApp.Cells[rowIndex, colIndex] = textBoxCijena.Text;
 
                 rowIndex = 27; colIndex = 1;
+                if (textBoxRabat.Text.Length != 0) rowIndex = 27;
                 excelApp.Cells[rowIndex, colIndex] = textBoxRelacija.Text;
 
                 rowIndex = 30; colIndex = 3;
+                if (textBoxRabat.Text.Length != 0) rowIndex = 27;
                 excelApp.Cells[rowIndex, colIndex] = textBoxJM.Text;
 
                 rowIndex = 17; colIndex = 1;
@@ -157,9 +170,21 @@ namespace WindowsFormApplication1
                 rowIndex = 26; colIndex = 2;
                 excelApp.Cells[rowIndex, colIndex] = textBoxPozicija.Text;
 
-                rowIndex = 30; colIndex = 9;
-                string PDV = textBoxPDV.Text.Replace("%", "");
-                excelApp.Cells[rowIndex, colIndex] = PDV + "%";
+                if (textBoxRabat.Text.Length != 0)
+                {
+                    rowIndex = 27; colIndex = 9;
+                    double rabat = Convert.ToDouble(textBoxRabat.Text);
+                    excelApp.Cells[rowIndex, colIndex] = rabat / 100;
+
+                    rowIndex = 27; colIndex = 10;
+                    double PDV = Convert.ToDouble(textBoxPDV.Text);
+                    excelApp.Cells[rowIndex, colIndex] = PDV / 100;
+                }
+                else {
+                    rowIndex = 30; colIndex = 9;
+                    double PDV = Convert.ToDouble(textBoxPDV.Text);
+                    excelApp.Cells[rowIndex, colIndex] = PDV / 100;
+                }
 
                 rowIndex = 34; colIndex = 6;
                 string euro = textBoxEur.Text;
@@ -171,9 +196,12 @@ namespace WindowsFormApplication1
                 double UkupnaCijenaPDV = UkupnaCijenaBezPDV * (Convert.ToDouble(textBoxPDV.Text) / 100);
                 double KonačnaCijena = UkupnaCijenaBezPDV + UkupnaCijenaPDV;
                 double eur = KonačnaCijena / Convert.ToDouble(textBoxEur.Text);
+
+                if (textBoxRabat.Text.Length != 0) excelApp.Cells[34, 7] = eur;
+                else
                 excelApp.Cells[rowIndex, colIndex] = eur;
 
-                var datum = Convert.ToDateTime(textBoxDatum.Text);
+                var datum = Convert.ToDateTime(textBoxDVO.Text);
                 string datumPrikaz = datum.ToShortDateString();
 
                 int mjesec = datum.Month;
@@ -186,8 +214,8 @@ namespace WindowsFormApplication1
                 string dir = dira.Replace("\\\\", "\\");
                 string dirNe = dirNea.Replace("\\\\", "\\");
 
-                spremanje = dir + textBoxBrFakture.Text + "  " + textBoxDatum.Text + ".xlsx";
-                spremanjeNe = dirNe + textBoxBrFakture.Text + "  " + textBoxDatum.Text + ".xlsx";
+                spremanje = dir + textBoxBrFakture.Text + "  " + textBoxDVO.Text + ".xlsx";
+                spremanjeNe = dirNe + textBoxBrFakture.Text + "  " + textBoxDVO.Text + ".xlsx";
 
                 System.IO.Directory.CreateDirectory(dirNe);
                 System.IO.Directory.CreateDirectory(dir);
@@ -341,6 +369,7 @@ namespace WindowsFormApplication1
             {
                 SpremanjeFaktura();
                 SpremanjeKombi();
+                this.Close();
             }
             catch(Exception ex)
             {

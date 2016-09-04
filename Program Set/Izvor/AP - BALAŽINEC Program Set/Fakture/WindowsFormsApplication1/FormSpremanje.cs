@@ -44,6 +44,8 @@ namespace WindowsFormApplication1
         public int StupacRelacija { get; set; }
         public string Pozicija { get; set; }
         public string OtvorenaFaktura { get; set; }
+        public double rabat { get; set; }
+        public string PDV { get; set; }
         public string PutanjaOtvoreneFakture { get; set; }
        public bool NovaRuta { get; set; }
        public bool Placeno { get; set; }
@@ -257,7 +259,7 @@ namespace WindowsFormApplication1
                 excelApp.Cells[rowIndex, colIndex] = BrojFakture;
 
 
-                //cijena i količina
+                //cijena, količina, rabat i PDV
                 for (int red = 26; red <= 31; red += 1)
                 {
                     var trazi = (worksheet.Cells[red, 6] as Microsoft.Office.Interop.Excel.Range).Value;
@@ -268,7 +270,17 @@ namespace WindowsFormApplication1
                     {
                         excelApp.Cells[red, 6] = CijenaFakture;
                         excelApp.Cells[red, 5] = Kolicina;
-                        break;
+
+                    if (rabat != 0)
+                    {
+                        excelApp.Cells[red, 9] = Convert.ToDouble(rabat);
+                        excelApp.Cells[red, 10] = Convert.ToDouble(PDV);
+                    }
+                    else
+                    {
+                        excelApp.Cells[red, 9] = Convert.ToDouble(PDV);
+                    }
+                    break;
                     }
 
                 }
@@ -287,15 +299,17 @@ namespace WindowsFormApplication1
                     {
                         var trazi = (worksheet.Cells[red, stupac] as Microsoft.Office.Interop.Excel.Range).Value;
                         string STRtrazi = Convert.ToString(trazi);
+
                         Boolean equals = String.Equals(STRtrazi, "Pozicija:", StringComparison.OrdinalIgnoreCase);
                         if (equals == true)
                         {
                             excelApp.Cells[red, stupac + 1] = Pozicija;
+                        //MessageBox.Show(red + " " + stupac);
                             break;
                         }
                     }
                 }
-                var datum = Convert.ToDateTime(DatumValuta);
+                var datum = Convert.ToDateTime(DatumDvo);
 
                 int mjesec = datum.Month;
                 int godina = datum.Year;
@@ -334,16 +348,16 @@ namespace WindowsFormApplication1
                     if (Placeno == true)
                     {
 
-                        excelApp.ActiveWorkbook.SaveCopyAs(dirNovo + BrojFakture + "  " + DatumValuta + ".xlsx");
-                        open = dirNovo + BrojFakture + "  " + DatumValuta + ".xlsx";
+                        excelApp.ActiveWorkbook.SaveCopyAs(dirNovo + BrojFakture + "  " + DatumDvo + ".xlsx");
+                        open = dirNovo + BrojFakture + "  " + DatumDvo + ".xlsx";
 
                     }
 
 
                     else
                     {
-                        excelApp.ActiveWorkbook.SaveCopyAs(dirNeNovo + BrojFakture + "  " + DatumValuta + ".xlsx");
-                        open = dirNeNovo + BrojFakture + "  " + DatumValuta + ".xlsx";
+                        excelApp.ActiveWorkbook.SaveCopyAs(dirNeNovo + BrojFakture + "  " + DatumDvo + ".xlsx");
+                        open = dirNeNovo + BrojFakture + "  " + DatumDvo + ".xlsx";
 
                     }                   
                 }
@@ -358,14 +372,14 @@ namespace WindowsFormApplication1
                     {
                         if (dirPlaceno.Exists)
                         {
-                            excelApp.ActiveWorkbook.SaveCopyAs(dir + BrojFakture + "  " + DatumValuta + ".xlsx");
-                            open = dir + BrojFakture + "  " + DatumValuta + ".xlsx";
+                            excelApp.ActiveWorkbook.SaveCopyAs(dir + BrojFakture + "  " + DatumDvo + ".xlsx");
+                            open = dir + BrojFakture + "  " + DatumDvo + ".xlsx";
                         }
                         //Ako taj direktorij ne postoji->napravi ga 
                         else
                         {
-                            excelApp.ActiveWorkbook.SaveCopyAs(dir + BrojFakture + "  " + DatumValuta + ".xlsx");
-                            open = dir + BrojFakture + "  " + DatumValuta + ".xlsx";
+                            excelApp.ActiveWorkbook.SaveCopyAs(dir + BrojFakture + "  " + DatumDvo + ".xlsx");
+                            open = dir + BrojFakture + "  " + DatumDvo + ".xlsx";
                         }
                     }
 
@@ -373,14 +387,14 @@ namespace WindowsFormApplication1
                     {
                         if (dirNePlaceno.Exists)
                         {
-                            excelApp.ActiveWorkbook.SaveCopyAs(dirNe + BrojFakture + "  " + DatumValuta + ".xlsx");
-                            open = dirNe + BrojFakture + "  " + DatumValuta + ".xlsx";
+                            excelApp.ActiveWorkbook.SaveCopyAs(dirNe + BrojFakture + "  " + DatumDvo + ".xlsx");
+                            open = dirNe + BrojFakture + "  " + DatumDvo + ".xlsx";
                         }
                         //Ako taj direktorij ne postoji->napravi ga 
                         else
                         {
-                            excelApp.ActiveWorkbook.SaveCopyAs(dirNe + BrojFakture + "  " + DatumValuta + ".xlsx");
-                            open = dirNe + BrojFakture + "  " + DatumValuta + ".xlsx";
+                            excelApp.ActiveWorkbook.SaveCopyAs(dirNe + BrojFakture + "  " + DatumDvo + ".xlsx");
+                            open = dirNe + BrojFakture + "  " + DatumDvo + ".xlsx";
 
                         }
                     }                  

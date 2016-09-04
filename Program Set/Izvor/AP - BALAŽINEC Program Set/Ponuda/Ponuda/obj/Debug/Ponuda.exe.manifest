@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0XMGfjUD3Etxgn3WiYY9jNoUERu1TUNFsydN57YaNMk=</dsig:DigestValue>
+        <dsig:DigestValue>fWg0TquQPhch/ySaHnbtb3wczmQwffk1z2k09Z7igx0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,13 +72,13 @@
       <dsig:DigestValue>J9bklEh4VBP0MQUQTpp5RfQFTgB+L+ru2vY7JIQg+yQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Ponuda.exe.config" size="459">
+  <file name="Ponuda.exe.config" size="451">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>f93MkpMhxHldxRtxr2Mk8g0cYyl0NCdsqb35Rd/7D2g=</dsig:DigestValue>
+      <dsig:DigestValue>BQMu+fUmYWuhEWK3y9VeZROg+v6e5PZHvOUdYNosVT4=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
