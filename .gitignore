@@ -2,4 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Cijene/Cijene/bin/Debug
+/Cijene/Cijene/bin
+/Evidencija otpremnica/bin
+/PrintCMR/WindowsFormsApplication1/bin
+/Program Set/bin
+/Program Set/Izvor/AP - BALAŽINEC Program Set/Fakture/WindowsFormsApplication1/bin
+/Program Set/Izvor/AP - BALAŽINEC Program Set/Kombiji/Kombiji/bin
+/Program Set/Izvor/AP - BALAŽINEC Program Set/Nalozi/WindowsFormsApplication1/bin
+/Program Set/Izvor/AP - BALAŽINEC Program Set/Ponuda/Ponuda/bin
+/Program Set/Izvor/AP - BALAŽINEC Program Set/raspored/raspored/raspored/bin
