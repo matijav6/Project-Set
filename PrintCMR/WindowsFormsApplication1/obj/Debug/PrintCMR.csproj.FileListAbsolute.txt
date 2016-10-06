@@ -29,3 +29,9 @@ C:\Users\Matija\Desktop\git\Project-Set\PrintCMR\WindowsFormsApplication1\obj\De
 C:\Users\Matija\Desktop\git\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.application
 C:\Users\Matija\Desktop\git\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.exe
 C:\Users\Matija\Desktop\git\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.pdb
+C:\Users\matij\Desktop\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.csprojResolveAssemblyReference.cache
+C:\Users\matij\Desktop\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR_nmspace.FormSpremanje.resources
+C:\Users\matij\Desktop\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.Properties.Resources.resources
+C:\Users\matij\Desktop\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.csproj.GenerateResource.Cache
+C:\Users\matij\Desktop\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.exe
+C:\Users\matij\Desktop\Project-Set\PrintCMR\WindowsFormsApplication1\obj\Debug\PrintCMR.pdb

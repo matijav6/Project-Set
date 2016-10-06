@@ -157,3 +157,11 @@ C:\Users\Matija\Desktop\git\Project-Set\Program Set\obj\Debug\Program Set.csproj
 C:\Users\Matija\Desktop\git\Project-Set\Program Set\obj\Debug\Program Set.TrustInfo.xml
 C:\Users\Matija\Desktop\git\Project-Set\Program Set\obj\Debug\Program Set.exe.manifest
 C:\Users\Matija\Desktop\git\Project-Set\Program Set\obj\Debug\Program Set.application
+C:\Users\matij\Desktop\Project-Set\Program Set\bin\Debug\Program Set.exe.config
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program Set.exe
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program Set.pdb
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program Set.csprojResolveAssemblyReference.cache
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program_Set.Form1.resources
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program_Set.FormSync.resources
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program_Set.Properties.Resources.resources
+C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program Set.csproj.GenerateResource.Cache

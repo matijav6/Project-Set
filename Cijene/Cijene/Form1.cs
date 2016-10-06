@@ -23,7 +23,7 @@ namespace Cijene
 
         OleDbConnection conn;
 
-        string dat, postanskiBrojUcitavanje, tablica, cijena_str;
+        string dat, postanskiBrojUcitavanje, tablica, cijena_str, connString;
         double cijena;
         int stupacCBM, stupacZIP, stupacCijena, redCBM = 2, redZIP = 2, brojStupca;
         char stupac_chr = 'A';
@@ -46,7 +46,20 @@ namespace Cijene
 
                 }
 
-            }          
+            }
+             connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\Evidencija otpremnica\\Cijene.mdb";
+            // string connString = "Provider=Microsoft.Ace.OLEDB.12.0;Data Source=|DataDirectory|\\Evidencija otpremnica\\Cijene.mdb";
+
+            conn = new OleDbConnection(connString);
+            try
+            {
+                conn.Open();
+            }
+
+            catch
+            {
+                //baza je već otvorena, pa ne treba opet
+            }
         }
 
         public void BrojStupca_CHR(int kriterij_do)
@@ -127,7 +140,10 @@ namespace Cijene
         //2.1.
         public void DobijCijenu(double postanskiBroj, double cbm)
         {
-            for (int x = 2; x <= 100; x++)
+            if (postanskiBroj > 10000)
+                goto kraj;
+             
+                for (int x = 2; x <= 100; x++)
             {
                 if (postanskiBroj >= 1000 && postanskiBroj < 2000) postanskiBrojUcitavanje = "1000";
                 else if (postanskiBroj >= 2000 && postanskiBroj < 3000) postanskiBrojUcitavanje = "2000";
@@ -141,15 +157,12 @@ namespace Cijene
                     goto kraj;
                 }
                 else if (postanskiBroj >= 8000 && postanskiBroj < 9000) postanskiBrojUcitavanje = "8000";
-                else if (postanskiBroj >= 9000 && postanskiBroj < 10000) postanskiBrojUcitavanje = "9000";
+                else if (postanskiBroj >= 9000 && postanskiBroj < 10000) postanskiBrojUcitavanje = "9000";                
 
                 //učitavanje cijene iz accessa prema poštanskom i težini
 
-                string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\Evidencija otpremnica\\Cijene.mdb";
-                // string connString = "Provider=Microsoft.Ace.OLEDB.12.0;Data Source=|DataDirectory|\\Evidencija otpremnica\\Cijene.mdb";
-
-                conn = new OleDbConnection(connString);
-                conn.Open();
+               
+                    
                 //traženje iz koje tablice 
                 if (cbm <= 0.2) tablica = "prva";
                 else if (cbm > 0.2 && cbm <= 0.5) tablica = "pol";
@@ -171,7 +184,7 @@ namespace Cijene
                 }
                 //dobivanje cijene
                 string sql = "SELECT Cijena FROM " + tablica + " WHERE Postanski_Broj = " + postanskiBrojUcitavanje;
-
+                
                 OleDbCommand cmd = new OleDbCommand(sql, conn);
                 OleDbDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -182,11 +195,8 @@ namespace Cijene
                     goto kraj;
                 }
             }
-        kraj:
+            kraj:
             Refresh();
-            conn.Close();
-
-            
         }
 
         //2 - nakon učitanih stupaca trebamo dobiti cijenu
@@ -205,7 +215,7 @@ namespace Cijene
             excelApp.Cells[1, stupacCijena] = "Cijena";
 
             progressBar1.Value = 0;
-            int i = 0;
+            int i = 17;
             while (i <= 100)
             {
                 //dobivanje vrijednosti iz xl-a
@@ -215,6 +225,7 @@ namespace Cijene
                 //dobivanje cijene iz BP
                 double postanskiBroj = Convert.ToDouble(kriterijZIP);
                 double cbm = Convert.ToDouble(kriterijCBM);
+                
                 DobijCijenu(postanskiBroj, cbm);
 
                 if (cijena != 0)
@@ -269,6 +280,7 @@ namespace Cijene
 
             try
             {
+                conn.Close();
                 theWorkbook.Close(0);
                 excelApp.ActiveWorkbook.Close();
                 excelApp.Quit();
@@ -278,7 +290,7 @@ namespace Cijene
 
         private void button_UpisiCijene_Click(object sender, EventArgs e)
         {
-            try
+            //try
             {
                 button_UpisiCijene.Hide();
                 progressBar1.Show();
@@ -288,18 +300,18 @@ namespace Cijene
                 progressBar1.Hide();
                 label4.Show();
             }
-            catch(Exception ex)
+            //catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+               // MessageBox.Show(ex.ToString());
             }
 
-            try
+           // try
             {
                 theWorkbook.Close(0);
                 excelApp.ActiveWorkbook.Close();
                 excelApp.Quit();
             }
-            catch { }
+            //catch { }
             System.Diagnostics.Process.Start(dat);
             Close();
         }

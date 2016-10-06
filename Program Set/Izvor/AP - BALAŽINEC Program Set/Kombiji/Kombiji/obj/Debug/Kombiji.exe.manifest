@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>D0BWwa/db/y/7Je95kaFZj7H51el7OzLGqwShbg+B4w=</dsig:DigestValue>
+        <dsig:DigestValue>KAg+vcL6T5DKcpqWIdu3FKa3nm2Dn024/TACPeVoxag=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,13 +62,13 @@
       <dsig:DigestValue>KmI5ONJ9DNmLCi5cQvZeOc4wX+S49HZKGAKHGiSUevU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Kombiji.exe.config" size="473">
+  <file name="Kombiji.exe.config" size="484">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>CkWJEB3Jkj+YtU6UbAcbiP/mXfmXJosgY3uhBw/KUA0=</dsig:DigestValue>
+      <dsig:DigestValue>EbvCrJLjNLNYEwn3Mx9Wesy1Qx56clvua3X2L++c4Xc=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

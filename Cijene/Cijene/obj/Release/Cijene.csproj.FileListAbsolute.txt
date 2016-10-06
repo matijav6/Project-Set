@@ -15,3 +15,12 @@ C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.Properties
 C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.csproj.GenerateResource.Cache
 C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.exe
 C:\Users\Matija\Documents\ProjectSet\Cijene\Cijene\obj\Release\Cijene.pdb
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\bin\Release\Cijene.exe.config
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Release\Cijene.exe
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Release\Cijene.pdb
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\bin\Release\Cijene.exe
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\bin\Release\Cijene.pdb
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Release\Cijene.csprojResolveAssemblyReference.cache
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Release\Cijene.FormHome.resources
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Release\Cijene.Properties.Resources.resources
+C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Release\Cijene.csproj.GenerateResource.Cache

@@ -22,3 +22,15 @@ C:\Users\Matija\Desktop\git\Project-Set\Evidencija otpremnica\obj\Debug\Evidenci
 C:\Users\Matija\Desktop\git\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.csproj.GenerateResource.Cache
 C:\Users\Matija\Desktop\git\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.exe
 C:\Users\Matija\Desktop\git\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.pdb
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\bin\Debug\EvidencijaOtpremnica.mdb
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\bin\Debug\Evidencija otpremnica.exe.config
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\bin\Debug\Evidencija otpremnica.exe
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\bin\Debug\Evidencija otpremnica.pdb
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.csprojResolveAssemblyReference.cache
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Form1.resources
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Form_Dodaj.resources
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Form_Pregled.resources
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija_otpremnica.Properties.Resources.resources
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.csproj.GenerateResource.Cache
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.exe
+C:\Users\matij\Desktop\Project-Set\Evidencija otpremnica\obj\Debug\Evidencija otpremnica.pdb
