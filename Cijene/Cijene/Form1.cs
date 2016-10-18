@@ -140,7 +140,7 @@ namespace Cijene
         //2.1.
         public void DobijCijenu(double postanskiBroj, double cbm)
         {
-            if (postanskiBroj > 10000)
+            if (postanskiBroj >= 10000)
                 goto kraj;
              
                 for (int x = 2; x <= 100; x++)
@@ -290,7 +290,7 @@ namespace Cijene
 
         private void button_UpisiCijene_Click(object sender, EventArgs e)
         {
-            //try
+            try
             {
                 button_UpisiCijene.Hide();
                 progressBar1.Show();
@@ -300,18 +300,18 @@ namespace Cijene
                 progressBar1.Hide();
                 label4.Show();
             }
-            //catch(Exception ex)
+            catch(Exception ex)
             {
-               // MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString());
             }
 
-           // try
+            try
             {
                 theWorkbook.Close(0);
                 excelApp.ActiveWorkbook.Close();
                 excelApp.Quit();
             }
-            //catch { }
+            catch { }
             System.Diagnostics.Process.Start(dat);
             Close();
         }
