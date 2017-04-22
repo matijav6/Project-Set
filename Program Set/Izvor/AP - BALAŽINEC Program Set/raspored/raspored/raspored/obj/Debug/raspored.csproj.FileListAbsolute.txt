@@ -124,3 +124,16 @@ C:\Users\matij\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set
 C:\Users\matij\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.csproj.GenerateResource.Cache
 C:\Users\matij\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.exe
 C:\Users\matij\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.pdb
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.exe.config
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.exe.manifest
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.application
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.exe
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\bin\Debug\raspored.pdb
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.Form1.resources
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.Properties.Resources.resources
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.csproj.GenerateResource.Cache
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.exe.manifest
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.application
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.exe
+C:\Users\Matija\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\raspored\raspored\raspored\obj\Debug\raspored.pdb

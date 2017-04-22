@@ -42,33 +42,33 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kombiji.exe" size="394752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kombiji.exe" size="455680">
       <assemblyIdentity name="Kombiji" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eZBWTFA+twbyFcqxvpwJAY6gpJgXQqK7cfyUI/N07Gw=</dsig:DigestValue>
+        <dsig:DigestValue>GjlKSC6Jdj/m5WMR/GU9OoWdWnMgJQmtuOnzaxWDcR0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="BazaKombi.mdb" size="294912" writeableType="applicationData">
+  <file name="BazaKombi.mdb" size="360448" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>KmI5ONJ9DNmLCi5cQvZeOc4wX+S49HZKGAKHGiSUevU=</dsig:DigestValue>
+      <dsig:DigestValue>unvkbPMNBoQihWNTdvZe4pz+Ky6QIdxtir18Ss3+DHc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Kombiji.exe.config" size="473">
+  <file name="Kombiji.exe.config" size="772">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>CkWJEB3Jkj+YtU6UbAcbiP/mXfmXJosgY3uhBw/KUA0=</dsig:DigestValue>
+      <dsig:DigestValue>rixodSzkIEEhzwkQi5NL/QOVKun3opEWghGLjzoKm8A=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

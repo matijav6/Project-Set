@@ -57,6 +57,12 @@ namespace Kombiji
             {
                 textBoxGorivo.Text = textBoxGorivo.Text.Replace(".", ",");
             }
+            string Potrosnja = textBoxPotrosnja.Text;
+
+            if (Potrosnja.Contains('.'))
+            {
+                textBoxPotrosnja.Text = textBoxPotrosnja.Text.Replace(".", ",");
+            }
         }
         public void PripremaZaSpremanje()
         {
@@ -95,6 +101,12 @@ namespace Kombiji
             {
                 textBoxGorivo.Text = textBoxGorivo.Text.Replace(",", ".");
             }
+            string Potrosnja = textBoxPotrosnja.Text;
+
+            if (Potrosnja.Contains('.'))
+            {
+                textBoxPotrosnja.Text = textBoxPotrosnja.Text.Replace(".", ",");
+            }
         }
         private void monthCalendarDo_DateChanged(object sender, DateRangeEventArgs e)
         {
@@ -107,7 +119,7 @@ namespace Kombiji
         private void FormUnos_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'bazaKombiDataSet1.Table1' table. You can move, or remove it, as needed.
-            this.table1TableAdapter1.Fill(this.bazaKombiDataSet1.Table1);
+            //this.table1TableAdapter1.Fill(this.bazaKombiDataSet1.Table1);
             string[] files = Directory.GetFiles(Application.StartupPath + "\\Vozila", "*.mdb", SearchOption.AllDirectories);
 
             foreach (string file in files)
@@ -170,6 +182,8 @@ namespace Kombiji
                     textBoxDatumDo.Text = dr.Cells[9].Value.ToString();
                     textBoxCijenaTure.Text = dr.Cells[10].Value.ToString();                   
                     textBoxNapomena.Text = dr.Cells[12].Value.ToString();
+                    textBoxPotrosnja.Text = dr.Cells[13].Value.ToString();
+
                 }
             }
             catch
@@ -217,7 +231,8 @@ namespace Kombiji
             if (textBoxVozacu.Text.Length == 0) textBoxVozacu.Text = "0";
             if (textBoxNama.Text.Length == 0) textBoxNama.Text = "0";
             if (textBoxNapomena.Text.Length == 0) textBoxNapomena.Text = "-";
-            if(BrFakture == "") BrFakture = "0";
+            if (textBoxPotrosnja.Text.Length == 0) textBoxPotrosnja.Text = "0";
+            if (BrFakture == "") BrFakture = "0";
 
             Zbrajanje();
             double ukupno = Convert.ToDouble(textBoxCestarina.Text) + Convert.ToDouble(textBoxNama.Text) + Convert.ToDouble(textBoxVozacu.Text) + Convert.ToDouble(textBoxGorivo.Text);
@@ -245,10 +260,7 @@ namespace Kombiji
                     OleDbCommand brisanje = new OleDbCommand("DELETE * FROM Table1 WHERE ID = " + IDRetka, conn);
                     brisanje.ExecuteNonQuery();
                     conn.Close();
-
-                string imex = Path.GetFileNameWithoutExtension(brisi);
-                string putx = Application.StartupPath + "\\tmp\\" + imex + ".txt";
-                File.WriteAllText(putx, brisi);
+                
             }
 
             //novo vozilo
@@ -269,10 +281,10 @@ namespace Kombiji
                 OleDbDataAdapter adapter = new OleDbDataAdapter(sql, conn);
 
                 conn.Open();
-
-                string inDB = "INSERT INTO Table1 (Kombi,Vozac,Gorivo,Cestarina,Nama,Vozacu,Kilometri,DatumOd,DatumDo,UkupnaCijena,BrojFakture,Napomena) " +
-                             "VALUES ('" + comboBox1.Text + "','" + comboBoxVozač.Text + "'," + textBoxGorivo.Text + "," + textBoxCestarina.Text + "," + textBoxNama.Text + "," + textBoxVozacu.Text + "," + textBoxKilometri.Text + ",'" + textBoxDatumOd.Text + "','" + textBoxDatumDo.Text + "'," + textBoxCijenaTure.Text + "," + BrFakture + ",'" + textBoxNapomena.Text + "')";
-
+                
+                string inDB = "INSERT INTO Table1 (Kombi,Vozac,Gorivo,Cestarina,Nama,Vozacu,Kilometri,DatumOd,DatumDo,UkupnaCijena,BrojFakture,Napomena, Potrosnja) " +
+                             "VALUES ('" + comboBox1.Text + "','" + comboBoxVozač.Text + "'," + textBoxGorivo.Text + "," + textBoxCestarina.Text + "," + textBoxNama.Text + "," + textBoxVozacu.Text + "," + textBoxKilometri.Text + ",'" + textBoxDatumOd.Text + "','" + textBoxDatumDo.Text + "'," + textBoxCijenaTure.Text + "," + BrFakture + ",'" + textBoxNapomena.Text + "','"+textBoxPotrosnja.Text + "')";
+                
                 OleDbCommand upis = new OleDbCommand(inDB, conn);
                 upis.ExecuteNonQuery();
 
@@ -293,31 +305,18 @@ namespace Kombiji
 
                     conn.Open();
 
-                string inDB = "INSERT INTO Table1 (Kombi,Vozac,Gorivo,Cestarina,Nama,Vozacu,Kilometri,DatumOd,DatumDo,UkupnaCijena,BrojFakture,Napomena) " +
-                             "VALUES ('" + comboBox1.Text + "','" + comboBoxVozač.Text + "'," + textBoxGorivo.Text + "," + textBoxCestarina.Text + "," + textBoxNama.Text + "," + textBoxVozacu.Text + "," + textBoxKilometri.Text + ",'" + textBoxDatumOd.Text + "','" + textBoxDatumDo.Text + "'," + textBoxCijenaTure.Text + "," + BrFakture + ",'" + textBoxNapomena.Text + "')";
+                string inDB = "INSERT INTO Table1 (Kombi,Vozac,Gorivo,Cestarina,Nama,Vozacu,Kilometri,DatumOd,DatumDo,UkupnaCijena,BrojFakture,Napomena, Potrosnja) " +
+                             "VALUES ('" + comboBox1.Text + "','" + comboBoxVozač.Text + "'," + textBoxGorivo.Text + "," + textBoxCestarina.Text + "," + textBoxNama.Text + "," + textBoxVozacu.Text + "," + textBoxKilometri.Text + ",'" + textBoxDatumOd.Text + "','" + textBoxDatumDo.Text + "'," + textBoxCijenaTure.Text + "," + BrFakture + ",'" + textBoxNapomena.Text + "','" + textBoxPotrosnja.Text + "')";
 
                 OleDbCommand upis = new OleDbCommand(inDB, conn);
                     upis.ExecuteNonQuery();
                     conn.Close();
                 MessageBox.Show("Uspješno spremanje u bazu!", "Hit!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            SpremanjeZaSync();
+            }            
         kraj:
-            i++;
-            File.Delete(Application.StartupPath + "\\PrivBrFakture.txt");
+            i++;            
          
-        }
-        public void SpremanjeZaSync()
-        {
-
-
-            if (finish.Length != 0)
-            {
-                string ime = Path.GetFileNameWithoutExtension(finish);
-                string put = Application.StartupPath + "\\tmp\\" + ime + ".txt";
-                File.WriteAllText(put, finish);
-            }
-        }
+        }       
         private void textBoxKilometri_TextChanged(object sender, EventArgs e)
         {
             string n = textBoxKilometri.Text;
@@ -386,6 +385,16 @@ namespace Kombiji
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

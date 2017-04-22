@@ -28,7 +28,7 @@ namespace Kombiji
 
         private void FormIzmjena_Load(object sender, EventArgs e)
         {
-           
+
             string[] files = Directory.GetFiles(Application.StartupPath + "\\Vozila", "*.mdb", SearchOption.AllDirectories);
 
             foreach (string file in files)
@@ -37,14 +37,14 @@ namespace Kombiji
                 comboBoxOdabir.Items.Add(ime);
             }
             // TODO: This line of code loads data into the 'bazaKombiDataSet.Table1' table. You can move, or remove it, as needed.
-             // this.table1TableAdapter.Fill(this.bazaKombiDataSet.Table1);
+            // this.table1TableAdapter.Fill(this.bazaKombiDataSet.Table1);
 
         }
 
         private void comboBoxOdabir_SelectedIndexChanged(object sender, EventArgs e)
         {
             PutBaze = Application.StartupPath + "\\Vozila\\" + comboBoxOdabir.Text + ".mdb";
-            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + PutBaze;            
+            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + PutBaze;
 
             string sql = "SELECT * FROM Table1";
 
@@ -113,7 +113,7 @@ namespace Kombiji
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-           
+
         }
 
         private void dataGridView1_DoubleClick_1(object sender, EventArgs e)
@@ -136,6 +136,11 @@ namespace Kombiji
             finally
             {
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AP-Balažinec.exe" size="582144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AP-Balažinec.exe" size="584704">
       <assemblyIdentity name="AP-Balažinec" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nLJUNPMB4u7OmboOlSOzHfSm0EsNxXIJSsc9ATtNk70=</dsig:DigestValue>
+        <dsig:DigestValue>950qnWDw/HIcX5MT2oK3MNnlcWrbVmKp0frot0YHdhI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8Zrvt+CTRDYGxS7er3+0RZT9Y3S7s4lx5yDzDO0xXeI=</dsig:DigestValue>
+        <dsig:DigestValue>/rQHbD7KfzJm/taMgvFVEKqQNd9nLBFccjkR+2Dwqd8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,29 +73,29 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EbioB2r2320y0RPlbO9sdNRwMpcT12DH6QdcaCnh2Mc=</dsig:DigestValue>
+        <dsig:DigestValue>NtIsKnoPJxQmmToFDd7Xsgxf31NXJ17mRl9KbfifL7Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kombiji.exe" size="394752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kombiji.exe" size="455680">
       <assemblyIdentity name="Kombiji" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eZBWTFA+twbyFcqxvpwJAY6gpJgXQqK7cfyUI/N07Gw=</dsig:DigestValue>
+        <dsig:DigestValue>GjlKSC6Jdj/m5WMR/GU9OoWdWnMgJQmtuOnzaxWDcR0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AP-Balažinec.exe.config" size="1234">
+  <file name="AP-Balažinec.exe.config" size="1253">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QBkxiZFUBlLgkB5OjdojvFwK8MDLIZRoWSyCxhutxAc=</dsig:DigestValue>
+      <dsig:DigestValue>P6gtDPNcKp9R+/mRi4/1nnWtXpkHbZbCuzZ88AmQZA4=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

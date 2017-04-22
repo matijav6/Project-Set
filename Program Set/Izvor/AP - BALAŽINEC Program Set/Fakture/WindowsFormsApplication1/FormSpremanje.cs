@@ -31,6 +31,7 @@ namespace WindowsFormApplication1
         public string Cestarina { get; set; }
         public string Kilometri { get; set; }
         public string Gorivo { get; set; }
+        public string Potrosnja { get; set; }
         public string Vozacu { get; set; }
         public string Nama { get; set; }
         public string Napomena { get; set; }
@@ -81,15 +82,15 @@ namespace WindowsFormApplication1
 
             conn.Open();
 
-            string inDB = "INSERT INTO Table1 (Kombi,Vozac,Gorivo,Cestarina,Nama,Vozacu,Kilometri,DatumOd,DatumDo,UkupnaCijena,Napomena) " +
-                          "VALUES ('" + Registracija + "','" + comboBoxVozač + "'," + Gorivo + "," + Cestarina + "," + Nama + "," + Vozacu + "," + Kilometri + ",'" + DatumOd + "','" + DatumDo + "'," + CijenaTure + ",'" + Napomena + "')";
+            string inDB = "INSERT INTO Table1 (Kombi,Vozac,Gorivo,Cestarina,Nama,Vozacu,Kilometri,DatumOd,DatumDo,UkupnaCijena,Napomena,Potrosnja) " +
+                          "VALUES ('" + Registracija + "','" + comboBoxVozač + "'," + Gorivo + "," + Cestarina + "," + Nama + "," + Vozacu + "," + Kilometri + ",'" + DatumOd + "','" + DatumDo + "'," + CijenaTure + ",'" + Napomena + "','"+Potrosnja+"')";
 
 
             OleDbCommand upis = new OleDbCommand(inDB, conn);
             upis.ExecuteNonQuery();
             conn.Close();
 
-            SpremanjeZaSyncBaza();
+            
        
         }
         public void Zbrajanje()
@@ -105,12 +106,12 @@ namespace WindowsFormApplication1
             {
                 Kilometri = kilometri.Replace(".", ",");
             }
-            //string cijenaTure = CijenaTure;
+            string potrosnja = Potrosnja;
 
-            //if (cijenaTure.Contains('.'))
-            //{
-            //    CijenaTure = cijenaTure.Replace(".", ",");
-            //}
+            if (potrosnja.Contains('.'))
+            {
+                Potrosnja = potrosnja.Replace(".", ",");
+            }
             string UdioVozaču = Vozacu;
 
             if (UdioVozaču.Contains('.'))
@@ -129,6 +130,7 @@ namespace WindowsFormApplication1
             {
                 Gorivo = gorivo.Replace(".", ",");
             }
+
         }
         public void PripremaZaSpremanje()
         {
@@ -166,6 +168,12 @@ namespace WindowsFormApplication1
             if (gorivo.Contains(','))
             {
                 Gorivo = gorivo.Replace(",", ".");
+            }
+            string potrosnja = Potrosnja;
+
+            if (potrosnja.Contains(','))
+            {
+                Potrosnja = potrosnja.Replace(",", ".");
             }
         }
         public void SpremanjeZaSyncBaza()
@@ -433,6 +441,10 @@ namespace WindowsFormApplication1
         {
 
         }
-      
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

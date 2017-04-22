@@ -165,3 +165,44 @@ C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program_Set.Form1.resou
 C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program_Set.FormSync.resources
 C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program_Set.Properties.Resources.resources
 C:\Users\matij\Desktop\Project-Set\Program Set\obj\Debug\Program Set.csproj.GenerateResource.Cache
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Program Set.exe.config
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\EvidencijaOtpremnica.mdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\BazaKombi.mdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\DataBase.mdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\FormFirma.resx
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\FormFirma.cs
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\FormFirma.Designer.cs
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Program Set.exe.manifest
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Program Set.application
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Program Set.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Program Set.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\AP-Balažinec.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Cijene.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Evidencija otpremnica.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Kombiji.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Nalozi.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Ponuda.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\PrintCMR.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\raspored.exe
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Cijene.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Evidencija otpremnica.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\PrintCMR.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\AP-Balažinec.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Kombiji.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Nalozi.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\Ponuda.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\raspored.pdb
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\co-FR\AP-Balažinec.resources.dll
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\hr\AP-Balažinec.resources.dll
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\co-FR\Nalozi.resources.dll
+C:\Users\Matija\Project-Set\Program Set\bin\Debug\hr\Nalozi.resources.dll
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program_Set.Form1.resources
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program_Set.FormSync.resources
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program_Set.Properties.Resources.resources
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.csproj.GenerateResource.Cache
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.TrustInfo.xml
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.exe.manifest
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.application
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.exe
+C:\Users\Matija\Project-Set\Program Set\obj\Debug\Program Set.pdb

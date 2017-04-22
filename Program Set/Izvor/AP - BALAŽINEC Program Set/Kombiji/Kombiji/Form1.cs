@@ -36,6 +36,24 @@ namespace Kombiji
         {
             FormIzmjena formIzmjena = new FormIzmjena();
             formIzmjena.Show();
-        }        
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormEvidencija formEvidencija = new FormEvidencija();
+            formEvidencija.Show();
+        }
+
+        private void buttonIzmjenaEvidencije_Click(object sender, EventArgs e)
+        {
+            FormIzmjenaEvidencije formIzmjena = new FormIzmjenaEvidencije();
+            formIzmjena.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormEvidencijaPretrazivanje form = new FormEvidencijaPretrazivanje();
+            form.Show();
+        }
     }
 }

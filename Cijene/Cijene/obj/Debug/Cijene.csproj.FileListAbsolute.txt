@@ -33,3 +33,12 @@ C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Debug\Cijene.csprojResolveA
 C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Debug\Cijene.FormHome.resources
 C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Debug\Cijene.Properties.Resources.resources
 C:\Users\matij\Desktop\Project-Set\Cijene\Cijene\obj\Debug\Cijene.csproj.GenerateResource.Cache
+C:\Users\Matija\Project-Set\Cijene\Cijene\bin\Debug\Cijene.exe.config
+C:\Users\Matija\Project-Set\Cijene\Cijene\bin\Debug\Cijene.exe
+C:\Users\Matija\Project-Set\Cijene\Cijene\bin\Debug\Cijene.pdb
+C:\Users\Matija\Project-Set\Cijene\Cijene\obj\Debug\Cijene.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Project-Set\Cijene\Cijene\obj\Debug\Cijene.FormHome.resources
+C:\Users\Matija\Project-Set\Cijene\Cijene\obj\Debug\Cijene.Properties.Resources.resources
+C:\Users\Matija\Project-Set\Cijene\Cijene\obj\Debug\Cijene.csproj.GenerateResource.Cache
+C:\Users\Matija\Project-Set\Cijene\Cijene\obj\Debug\Cijene.exe
+C:\Users\Matija\Project-Set\Cijene\Cijene\obj\Debug\Cijene.pdb

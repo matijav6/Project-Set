@@ -60,9 +60,11 @@
             this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bazaKombiDataSet1 = new Kombiji.BazaKombiDataSet();
             this.table1TableAdapter1 = new Kombiji.BazaKombiDataSetTableAdapters.Table1TableAdapter();
+            this.bazaKombiEvidencijaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaKombiEvidencijaDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxOdabir
@@ -113,9 +115,9 @@
             this.buttonIzlaz.BackColor = System.Drawing.Color.Red;
             this.buttonIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
             this.buttonIzlaz.ForeColor = System.Drawing.Color.White;
-            this.buttonIzlaz.Location = new System.Drawing.Point(956, 19);
+            this.buttonIzlaz.Location = new System.Drawing.Point(1041, 12);
             this.buttonIzlaz.Name = "buttonIzlaz";
-            this.buttonIzlaz.Size = new System.Drawing.Size(212, 109);
+            this.buttonIzlaz.Size = new System.Drawing.Size(212, 116);
             this.buttonIzlaz.TabIndex = 15;
             this.buttonIzlaz.Text = "IZLAZ";
             this.buttonIzlaz.UseVisualStyleBackColor = false;
@@ -162,8 +164,9 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Location = new System.Drawing.Point(7, 134);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1161, 518);
+            this.dataGridView1.Size = new System.Drawing.Size(1246, 518);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick_1);
             // 
             // dataGridViewTextBoxColumn10
@@ -179,7 +182,6 @@
             this.dataGridViewTextBoxColumn11.DataPropertyName = "Kombi";
             this.dataGridViewTextBoxColumn11.HeaderText = "Kombi";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 102;
             // 
             // dataGridViewTextBoxColumn12
             // 
@@ -189,7 +191,6 @@
             this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTextBoxColumn12.HeaderText = "Vozač";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 102;
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -198,7 +199,7 @@
             this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn13.HeaderText = "Gorivo";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 106;
+            this.dataGridViewTextBoxColumn13.Width = 104;
             // 
             // dataGridViewTextBoxColumn14
             // 
@@ -207,7 +208,7 @@
             this.dataGridViewTextBoxColumn14.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewTextBoxColumn14.HeaderText = "Cestarina";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 138;
+            this.dataGridViewTextBoxColumn14.Width = 136;
             // 
             // dataGridViewTextBoxColumn15
             // 
@@ -216,7 +217,7 @@
             this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn15.HeaderText = "Nama";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 97;
+            this.dataGridViewTextBoxColumn15.Width = 95;
             // 
             // dataGridViewTextBoxColumn16
             // 
@@ -225,7 +226,7 @@
             this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn16.HeaderText = "Vozaču";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 115;
+            this.dataGridViewTextBoxColumn16.Width = 113;
             // 
             // dataGridViewTextBoxColumn17
             // 
@@ -234,21 +235,21 @@
             this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTextBoxColumn17.HeaderText = "Kilometri";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 129;
+            this.dataGridViewTextBoxColumn17.Width = 127;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.DataPropertyName = "DatumOd";
             this.dataGridViewTextBoxColumn18.HeaderText = "Datum početka ture";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 183;
+            this.dataGridViewTextBoxColumn18.Width = 181;
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.DataPropertyName = "DatumDo";
             this.dataGridViewTextBoxColumn19.HeaderText = "Datum završetka ture";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 200;
+            this.dataGridViewTextBoxColumn19.Width = 198;
             // 
             // dataGridViewTextBoxColumn20
             // 
@@ -257,21 +258,21 @@
             this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewTextBoxColumn20.HeaderText = "Ukupna cijena";
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 170;
+            this.dataGridViewTextBoxColumn20.Width = 168;
             // 
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.DataPropertyName = "BrojFakture";
             this.dataGridViewTextBoxColumn21.HeaderText = "Broj fakture";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 145;
+            this.dataGridViewTextBoxColumn21.Width = 143;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.DataPropertyName = "Napomena";
             this.dataGridViewTextBoxColumn22.HeaderText = "Napomena";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 149;
+            this.dataGridViewTextBoxColumn22.Width = 147;
             // 
             // table1BindingSource
             // 
@@ -293,7 +294,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1174, 655);
+            this.ClientSize = new System.Drawing.Size(1265, 655);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonIzlaz);
             this.Controls.Add(this.comboBoxOdabir);
@@ -307,6 +308,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaKombiEvidencijaDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,5 +363,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.BindingSource bazaKombiEvidencijaDataSetBindingSource;        
     }
 }

@@ -49,17 +49,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GD59Ab1AB9gyg58vO1EIetoIk0y5TPcoNZ/opHn59T4=</dsig:DigestValue>
+        <dsig:DigestValue>JrhRP313Gs1jQIloBvOFYRwbMyHRokZ965q3bMqeB8E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="raspored.exe.config" size="182">
+  <file name="raspored.exe.config" size="187">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>PbQiHFOih9uz3RPvvsStiPKcsu3PE8/gyCn2QGUyyf4=</dsig:DigestValue>
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

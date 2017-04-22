@@ -112,6 +112,8 @@
             this.textBoxValuta = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxBrojFakture = new System.Windows.Forms.TextBox();
+            this.textBoxPotrosnja = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
@@ -478,6 +480,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxPotrosnja);
+            this.groupBox2.Controls.Add(this.label30);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.comboBox1);
@@ -972,6 +976,24 @@
             this.textBoxBrojFakture.TabIndex = 6;
             this.textBoxBrojFakture.TextChanged += new System.EventHandler(this.textBoxBrojFakture_TextChanged);
             // 
+            // textBoxPotrosnja
+            // 
+            this.textBoxPotrosnja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxPotrosnja.Location = new System.Drawing.Point(219, 245);
+            this.textBoxPotrosnja.Name = "textBoxPotrosnja";
+            this.textBoxPotrosnja.Size = new System.Drawing.Size(169, 29);
+            this.textBoxPotrosnja.TabIndex = 128;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label30.Location = new System.Drawing.Point(215, 218);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(103, 24);
+            this.label30.TabIndex = 127;
+            this.label30.Text = "Potrošnja:";
+            // 
             // FormNovaFirmaSlo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1087,5 +1109,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBoxRabat;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox textBoxPotrosnja;
+        private System.Windows.Forms.Label label30;
     }
 }

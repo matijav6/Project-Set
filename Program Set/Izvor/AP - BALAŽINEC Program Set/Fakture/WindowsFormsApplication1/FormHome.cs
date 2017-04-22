@@ -50,7 +50,7 @@ namespace WindowsFormApplication1
             string DatumValute = textBoxDatumValute.Text;
             string BrFakture = textBoxBrojFakture.Text;
             string Kolicina = textBoxKolicina.Text;
-            string Cijena = textBoxCijena.Text;
+            string Cijena = textBoxCijenaTure.Text;
             string Relacija = textBoxRelacija.Text;
             string Pozicija = textBoxPozicija.Text;
             string Kombi = comboBoxKombi.Text;
@@ -62,6 +62,7 @@ namespace WindowsFormApplication1
             string UdioVozacuTxtBox = textBoxVozacu.Text.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
             string UdioNamaTxtBox = textBoxNama.Text.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
             string GorivoTxtBox = textBoxGorivo.Text.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
+            string Potrosnja = textBoxPotrosnja.Text.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
             //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
             //spremanje
@@ -338,6 +339,7 @@ namespace WindowsFormApplication1
                     if (textBoxNama.Text.Length == 0) textBoxNama.Text = "0";
                     if (textBoxNapomena.Text.Length == 0) textBoxNapomena.Text = "-";
                     if (textBoxRabat.Text.Length == 0) textBoxRabat.Text = "0";
+                        if (textBoxPotrosnja.Text.Length == 0) textBoxPotrosnja.Text = "0";
 
                         SigurnosnoSpremanje();
 
@@ -862,6 +864,18 @@ namespace WindowsFormApplication1
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxPotrosnja_TextChanged(object sender, EventArgs e)
+        {
+            string n = textBoxPotrosnja.Text;
+            float val;
+            if ((!(float.TryParse(n, out val))) && textBoxPotrosnja.Text.Length != 0)
+            {
+                MessageBox.Show("Samo brojevi!");
+                textBoxPotrosnja.Clear();
+            }
+            formSpremanje.Potrosnja = textBoxPotrosnja.Text;
         }
 
         private void radioNePlaceno_CheckedChanged(object sender, EventArgs e)

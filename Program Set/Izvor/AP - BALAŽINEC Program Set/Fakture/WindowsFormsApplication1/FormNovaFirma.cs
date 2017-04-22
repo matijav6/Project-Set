@@ -618,5 +618,15 @@ namespace WindowsFormApplication1
             }
         }
 
+        private void textBoxPotrosnja_TextChanged(object sender, EventArgs e)
+        {
+            string n = textBoxPotrosnja.Text;
+            float val;
+            if ((!(float.TryParse(n, out val))) && textBoxPotrosnja.Text.Length != 0)
+            {
+                MessageBox.Show("Samo brojevi!");
+                textBoxPotrosnja.Clear();
+            }
+        }
     }
 }

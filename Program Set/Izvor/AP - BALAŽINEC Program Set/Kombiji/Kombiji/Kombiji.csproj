@@ -13,6 +13,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,17 +77,45 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BazaKombiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BazaKombiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaKombiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaKombiEvidencijaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaKombiEvidencijaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEvidencija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEvidencija.Designer.cs">
+      <DependentUpon>FormEvidencija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEvidencijaPretrazivanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEvidencijaPretrazivanje.Designer.cs">
+      <DependentUpon>FormEvidencijaPretrazivanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormIzmjena.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormIzmjena.Designer.cs">
       <DependentUpon>FormIzmjena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIzmjenaEvidencije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIzmjenaEvidencije.Designer.cs">
+      <DependentUpon>FormIzmjenaEvidencije.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPretrazi.cs">
       <SubType>Form</SubType>
@@ -91,8 +134,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEvidencija.resx">
+      <DependentUpon>FormEvidencija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEvidencijaPretrazivanje.resx">
+      <DependentUpon>FormEvidencijaPretrazivanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIzmjena.resx">
       <DependentUpon>FormIzmjena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIzmjenaEvidencije.resx">
+      <DependentUpon>FormIzmjenaEvidencije.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPretrazi.resx">
       <DependentUpon>FormPretrazi.cs</DependentUpon>
@@ -121,6 +173,28 @@
     <None Include="BazaKombiDataSet.xss">
       <DependentUpon>BazaKombiDataSet.xsd</DependentUpon>
     </None>
+    <None Include="BazaKombiDataSet1.xsc">
+      <DependentUpon>BazaKombiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BazaKombiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaKombiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaKombiDataSet1.xss">
+      <DependentUpon>BazaKombiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BazaKombiEvidencijaDataSet.xsc">
+      <DependentUpon>BazaKombiEvidencijaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaKombiEvidencijaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaKombiEvidencijaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaKombiEvidencijaDataSet.xss">
+      <DependentUpon>BazaKombiEvidencijaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -140,6 +214,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\slide-image-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

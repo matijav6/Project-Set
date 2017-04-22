@@ -134,7 +134,7 @@ namespace WindowsFormApplication1
                     }
 
                 }
-                if(provjeraRelacija == 0 )
+                if (provjeraRelacija == 0)
                 {
                     MessageBox.Show("Došlo je do otvaranja neočekivane fakture,program će se resetirati.");
 

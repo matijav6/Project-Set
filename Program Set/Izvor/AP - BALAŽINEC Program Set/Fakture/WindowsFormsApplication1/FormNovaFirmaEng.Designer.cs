@@ -55,6 +55,8 @@
             this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePickerDo = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxPDV = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.textBoxPozicija = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBoxRegBroj = new System.Windows.Forms.TextBox();
@@ -110,8 +112,8 @@
             this.radioPlaceno = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.textBoxPDV = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
+            this.textBoxPotrosnja = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -373,6 +375,25 @@
             this.groupBox1.TabIndex = 108;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fakture";
+            // 
+            // textBoxPDV
+            // 
+            this.textBoxPDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxPDV.Location = new System.Drawing.Point(171, 115);
+            this.textBoxPDV.Name = "textBoxPDV";
+            this.textBoxPDV.Size = new System.Drawing.Size(123, 29);
+            this.textBoxPDV.TabIndex = 67;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label29.Location = new System.Drawing.Point(167, 88);
+            this.label29.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(57, 24);
+            this.label29.TabIndex = 68;
+            this.label29.Text = "PDV:";
             // 
             // textBoxPozicija
             // 
@@ -783,6 +804,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxPotrosnja);
+            this.groupBox2.Controls.Add(this.label30);
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.dataGridView1);
@@ -934,24 +957,23 @@
             this.monthCalendar1.TabIndex = 102;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
-            // textBoxPDV
+            // textBoxPotrosnja
             // 
-            this.textBoxPDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxPDV.Location = new System.Drawing.Point(171, 115);
-            this.textBoxPDV.Name = "textBoxPDV";
-            this.textBoxPDV.Size = new System.Drawing.Size(123, 29);
-            this.textBoxPDV.TabIndex = 67;
+            this.textBoxPotrosnja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxPotrosnja.Location = new System.Drawing.Point(219, 256);
+            this.textBoxPotrosnja.Name = "textBoxPotrosnja";
+            this.textBoxPotrosnja.Size = new System.Drawing.Size(164, 29);
+            this.textBoxPotrosnja.TabIndex = 100;
             // 
-            // label29
+            // label30
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label29.Location = new System.Drawing.Point(167, 88);
-            this.label29.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(57, 24);
-            this.label29.TabIndex = 68;
-            this.label29.Text = "PDV:";
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label30.Location = new System.Drawing.Point(215, 229);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(103, 24);
+            this.label30.TabIndex = 99;
+            this.label30.Text = "Potrošnja:";
             // 
             // FormNovaFirmaEng
             // 
@@ -1071,5 +1093,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBoxPDV;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox textBoxPotrosnja;
+        private System.Windows.Forms.Label label30;
     }
 }

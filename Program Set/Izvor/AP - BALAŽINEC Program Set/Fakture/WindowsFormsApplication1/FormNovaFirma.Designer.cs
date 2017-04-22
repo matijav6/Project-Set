@@ -87,12 +87,14 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxRabat = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBoxPozicija = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxPotrosnja = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.buttonPopuniPremaPredlosku = new System.Windows.Forms.Button();
-            this.textBoxRabat = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -722,6 +724,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fakture";
             // 
+            // textBoxRabat
+            // 
+            this.textBoxRabat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxRabat.Location = new System.Drawing.Point(171, 43);
+            this.textBoxRabat.Name = "textBoxRabat";
+            this.textBoxRabat.Size = new System.Drawing.Size(123, 29);
+            this.textBoxRabat.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label7.Location = new System.Drawing.Point(167, 16);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 24);
+            this.label7.TabIndex = 62;
+            this.label7.Text = "Rabat:";
+            // 
             // textBoxPozicija
             // 
             this.textBoxPozicija.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -743,6 +764,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxPotrosnja);
+            this.groupBox2.Controls.Add(this.label29);
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label26);
@@ -774,6 +797,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kombi";
             // 
+            // textBoxPotrosnja
+            // 
+            this.textBoxPotrosnja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBoxPotrosnja.Location = new System.Drawing.Point(224, 257);
+            this.textBoxPotrosnja.Name = "textBoxPotrosnja";
+            this.textBoxPotrosnja.Size = new System.Drawing.Size(164, 29);
+            this.textBoxPotrosnja.TabIndex = 97;
+            this.textBoxPotrosnja.TextChanged += new System.EventHandler(this.textBoxPotrosnja_TextChanged);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label29.Location = new System.Drawing.Point(220, 230);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(103, 24);
+            this.label29.TabIndex = 96;
+            this.label29.Text = "Potrošnja:";
+            // 
             // buttonPopuniPremaPredlosku
             // 
             this.buttonPopuniPremaPredlosku.AutoSize = true;
@@ -786,25 +828,6 @@
             this.buttonPopuniPremaPredlosku.Text = "Popuni prema \r\nzadnjem predlošku";
             this.buttonPopuniPremaPredlosku.UseVisualStyleBackColor = false;
             this.buttonPopuniPremaPredlosku.Click += new System.EventHandler(this.buttonPopuniPremaPredlosku_Click);
-            // 
-            // textBoxRabat
-            // 
-            this.textBoxRabat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.textBoxRabat.Location = new System.Drawing.Point(171, 43);
-            this.textBoxRabat.Name = "textBoxRabat";
-            this.textBoxRabat.Size = new System.Drawing.Size(123, 29);
-            this.textBoxRabat.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label7.Location = new System.Drawing.Point(167, 16);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 24);
-            this.label7.TabIndex = 62;
-            this.label7.Text = "Rabat:";
             // 
             // FormNovaFirma
             // 
@@ -905,5 +928,7 @@
         private System.Windows.Forms.Button buttonPopuniPremaPredlosku;
         private System.Windows.Forms.TextBox textBoxRabat;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxPotrosnja;
+        private System.Windows.Forms.Label label29;
     }
 }
