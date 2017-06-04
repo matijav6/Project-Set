@@ -164,7 +164,12 @@ namespace WindowsFormApplication1
                 excelApp.Cells[rowIndex, colIndex] = textBoxMjesto.Text;
 
                 rowIndex = 26; colIndex = 2;
-                excelApp.Cells[rowIndex, colIndex] = textBoxPozicija.Text;
+                if (textBoxRabat.Text.Length != 0)
+                {
+                    rowIndex = 24;
+                    colIndex = 2;
+                }
+                    excelApp.Cells[rowIndex, colIndex] = textBoxPozicija.Text;
 
                 if (textBoxRabat.Text.Length != 0)
                 {

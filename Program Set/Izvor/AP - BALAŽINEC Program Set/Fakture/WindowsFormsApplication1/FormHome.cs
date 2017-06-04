@@ -74,18 +74,25 @@ namespace WindowsFormApplication1
             conn.Close();
 
         }
-        public void OdabirFaktureZaOtvaranje(string[] dirs)
-        {            
-            //odabir nasumične (prve) fakture za otvaranje, u koju se upisuje
-            foreach (string dir in dirs)
-            {
-                if (!FaktureNepodobneZaUcitavanje.Contains(dir.Replace("\\\\", "\\")))
-                {
-                    Otvorenafaktura = dir.Replace("\\\\", "\\");
-                    break;
-                }
+        public void OdabirFaktureZaOtvaranje(string dir, string file)
+        {
 
-            }
+            ////odabir nasumične (prve) fakture za otvaranje, u koju se upisuje
+            //foreach (string dir in dirs)
+            //{
+            //     MessageBox.Show(Otvorenafaktura);
+            //    if (!FaktureNepodobneZaUcitavanje.Contains(dir.Replace("\\\\", "\\")))
+            //    {
+            //        Otvorenafaktura = dir.Replace("\\\\", "\\");
+            //        break;
+            //    }
+
+            //}
+            string[] dirs = Directory.GetFiles(dir, file, SearchOption.AllDirectories);
+            foreach(string files in dirs)
+            {                                         
+                Otvorenafaktura = files;
+            }           
 
             FormUcitavanje formUcitavanje = new FormUcitavanje();
 
@@ -146,8 +153,26 @@ namespace WindowsFormApplication1
             //Odabir firme
             if (Ucitavanje == 2)
             {
+
+                //////////////////////////////////////
+                var dirInfo = new DirectoryInfo(Browse);
+                FileInfo[] files = dirInfo.GetFiles("*.xlsx", SearchOption.AllDirectories);
+                DateTime lastWrite = DateTime.MinValue;
+                FileInfo lastWritenFile = null;
+
+                foreach (FileInfo file in files)
+                {
+                    if(!FaktureNepodobneZaUcitavanje.Contains(file.ToString()))
+                        if (file.LastWriteTime > lastWrite)
+                        {
+                            lastWrite = file.LastWriteTime;
+                            lastWritenFile = file;
+                        }
+                }                              
+                //////////////////////////////////////
+
                 string[] dirs = Directory.GetFiles(Browse, "*.xlsx", SearchOption.AllDirectories);
-                FormUcitavanje formUcitavanje = new FormUcitavanje();
+                //FormUcitavanje formUcitavanje = new FormUcitavanje();
                // formUcitavanje.dirs = dirs;
 
                 if (dirs.Length == 0)
@@ -180,13 +205,30 @@ namespace WindowsFormApplication1
                         //Učitavanje faktura
                         formSpremanje.PutanjaOtvoreneFakture = Browse;
 
-                        OdabirFaktureZaOtvaranje(dirs);
+                        OdabirFaktureZaOtvaranje(Browse, lastWritenFile.ToString());
                         
                     }
 
                     //tek otvorene redovne ture, ponovno učitavanje ruta
                     else
                     {
+                        //////////////////////////////////////
+                         dirInfo = new DirectoryInfo(Browse);
+                         files = dirInfo.GetFiles("*.xlsx", SearchOption.AllDirectories);
+                         lastWrite = DateTime.MinValue;
+                         lastWritenFile = null;
+
+                        foreach (FileInfo file in files)
+                        {
+                            if (!FaktureNepodobneZaUcitavanje.Contains(file.ToString()))
+                                if (file.LastWriteTime > lastWrite)
+                                {
+                                    lastWrite = file.LastWriteTime;
+                                    lastWritenFile = file;
+                                }
+                        }
+                        //////////////////////////////////////
+
                         string[] PonovnoUcitavanje = System.IO.Directory.GetDirectories(Browse, "*", SearchOption.TopDirectoryOnly);
                         foreach (string dir in PonovnoUcitavanje)
                         {
@@ -212,7 +254,7 @@ namespace WindowsFormApplication1
                     
                     formSpremanje.PutanjaOtvoreneFakture = Browse;
 
-                    OdabirFaktureZaOtvaranje(dirs);
+                    OdabirFaktureZaOtvaranje(Browse, lastWritenFile.ToString());
 
                 }
             }
@@ -220,6 +262,22 @@ namespace WindowsFormApplication1
             //učitavanje firma
             else
             {
+                //////////////////////////////////////
+                var dirInfo = new DirectoryInfo(Browse);
+                FileInfo[] files = dirInfo.GetFiles("*.xlsx", SearchOption.AllDirectories);
+                DateTime lastWrite = DateTime.MinValue;
+                FileInfo lastWritenFile = null;
+
+                foreach (FileInfo file in files)
+                {
+                    if (!FaktureNepodobneZaUcitavanje.Contains(file.ToString()))
+                        if (file.LastWriteTime > lastWrite)
+                        {
+                            lastWrite = file.LastWriteTime;
+                            lastWritenFile = file;
+                        }
+                }
+                //////////////////////////////////////
                 string[] PonovnoUcitavanje = System.IO.Directory.GetDirectories(Browse, "*", SearchOption.TopDirectoryOnly);
                 foreach (string dir in PonovnoUcitavanje)
                 {
@@ -246,6 +304,23 @@ namespace WindowsFormApplication1
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
             //dobivanje direktorija (frima) iz faktura
+            //////////////////////////////////////
+            var dirInfo = new DirectoryInfo(put + listBox_novaRuta.SelectedItem.ToString());
+            FileInfo[] files = dirInfo.GetFiles("*.xlsx", SearchOption.AllDirectories);
+            DateTime lastWrite = DateTime.MinValue;
+            FileInfo lastWritenFile = null;
+
+            foreach (FileInfo file in files)
+            {
+                if (!FaktureNepodobneZaUcitavanje.Contains(file.ToString()))
+                    if (file.LastWriteTime > lastWrite)
+                    {
+                        lastWrite = file.LastWriteTime;
+                        lastWritenFile = file;
+                    }
+            }
+            //////////////////////////////////////
+
             string[] dirs = System.IO.Directory.GetFiles(put + listBox_novaRuta.SelectedItem.ToString(), "*.xlsx", SearchOption.AllDirectories);
             FormUcitavanje form = new FormUcitavanje();
             form.dirs = dirs;
@@ -269,7 +344,7 @@ namespace WindowsFormApplication1
                     formSpremanje.PutanjaOtvoreneFakture = put + listBox_novaRuta.SelectedItem.ToString();
 
                     // u "OdabirFaktureZaOtvaranje" se rješava sve
-                    OdabirFaktureZaOtvaranje(dirs);
+                    OdabirFaktureZaOtvaranje(put + listBox_novaRuta.SelectedItem.ToString(), lastWritenFile.ToString());
                     //sitnice..
                     listBox_novaRuta.Items.Clear();
                     button_Zatvori.Hide();
@@ -285,7 +360,7 @@ namespace WindowsFormApplication1
                     listBox_novaRuta.Items.Clear();
                     button_Zatvori.Hide();
                     formSpremanje.PutanjaOtvoreneFakture = put + listBox_novaRuta.SelectedItem.ToString();
-                    OdabirFaktureZaOtvaranje(dirs);
+                    OdabirFaktureZaOtvaranje(put + listBox_novaRuta.SelectedItem.ToString(), lastWritenFile.ToString());
                 }
             }
             

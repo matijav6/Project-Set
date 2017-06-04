@@ -418,9 +418,6 @@ namespace WindowsFormApplication1
             }
         private void FormSpremanje_Shown(object sender, EventArgs e)
         {
-            //System.Timers.Timer timer = new System.Timers.Timer();
-            //timer.Interval = 1000;
-            //timer.Start();
             try
             {
                  SpremanjeFaktura();

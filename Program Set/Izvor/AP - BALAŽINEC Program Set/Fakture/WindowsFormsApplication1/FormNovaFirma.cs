@@ -448,25 +448,25 @@ namespace WindowsFormApplication1
         }
         private void spremi_Click(object sender, EventArgs e)
         {
-        //    try
-        //    {
-                SigurnosnoSpremanje();
-                SpremanjeFaktura();
-                SpremanjeKombi();
+            //try
+            //{
+            SigurnosnoSpremanje();
+            SpremanjeFaktura();
+            SpremanjeKombi();
             this.Close();
-        //    }
-        //    catch
-        //    {
-        //        MessageBox.Show("Došlo je do greške!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Došlo je do greške!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        //    }
-        //    finally
-        //    {
+            //}
+            //finally
+            //{
 
-        //    }
+            //}
 
 
-    }
+        }
 
         private void textBrFakture_TextChanged(object sender, EventArgs e)
         {

@@ -166,11 +166,11 @@ namespace WindowsFormApplication1
 
                 rowIndex = 31; colIndex = 2;
 
-                if (textBoxRabat.Text.Length != 0)
-                {
-                    rowIndex = 31;
-                    colIndex = 3;
-                }
+                //if (textBoxRabat.Text.Length != 0)
+                //{
+                //    rowIndex = 31;
+                //    colIndex = 3;
+                //}
                     excelApp.Cells[rowIndex, colIndex] = textBoxPozicija.Text;
 
 
