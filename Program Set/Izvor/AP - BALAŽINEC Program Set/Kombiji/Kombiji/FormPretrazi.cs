@@ -127,7 +127,7 @@ namespace Kombiji
             textBoxUkupnoGorivo.Clear();
             textBoxVozaču.Clear();
 
-            double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0;
+            double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0, sum7 = 0, ukupno = 0;
             for (int i = 0; i < dataGridView1.Rows.Count; ++i)
             {
                 sum1 += Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value.ToString().Replace(".", ","));
@@ -135,15 +135,30 @@ namespace Kombiji
                 sum3 += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value.ToString().Replace(".", ","));
                 sum4 += Convert.ToDouble(dataGridView1.Rows[i].Cells[10].Value.ToString().Replace(".", ","));
                 sum5 += Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value.ToString().Replace(".", ","));
-                sum6 += Convert.ToDouble(dataGridView1.Rows[i].Cells[13].Value.ToString().Replace(".",","));
+                sum7 += Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value.ToString().Replace(".", ","));
+                var potrosnja = dataGridView1.Rows[i].Cells[13].Value.ToString().Replace(".", ",");
+                try
+                {   
+                    if(Convert.ToDouble(potrosnja) != 0)
+                    {
+                        sum6 += Convert.ToDouble(potrosnja);
+                        ukupno++;
+                    }
+                        
+                }
+                catch
+                {
+
+                }                           
             }
-            sum6 /= dataGridView1.Rows.Count;
+            sum6 /= ukupno;
             textBoxUkupnoKilometara.Text = sum1.ToString("0.00");
             textBoxUkupnoCestarina.Text = sum2.ToString("0.00");
             textBoxUkupnoGorivo.Text = sum3.ToString("0.00");
             textBoxUkupnoCijena.Text = sum4.ToString("0.00");
             textBoxVozaču.Text = sum5.ToString("0.00");            
             textBoxPotrosnja.Text = sum6.ToString("0.00");
+            textBoxNama.Text = sum7.ToString("0.00");
         }
 
         private void buttonIzlaz_Click(object sender, EventArgs e)
@@ -184,7 +199,7 @@ namespace Kombiji
                     textBoxVozaču.Clear();
                     textBoxPotrosnja.Clear();
 
-                    double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0;
+                    double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0, sum7 = 0, ukupno = 0;
                     for (int i = 0; i < dataGridView1.Rows.Count; ++i)
                     {
                         sum1 += Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value.ToString().Replace(".", ","));
@@ -192,15 +207,30 @@ namespace Kombiji
                         sum3 += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value.ToString().Replace(".", ","));
                         sum4 += Convert.ToDouble(dataGridView1.Rows[i].Cells[10].Value.ToString().Replace(".", ","));
                         sum5 += Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value.ToString().Replace(".", ","));
-                        sum6 += Convert.ToDouble(dataGridView1.Rows[i].Cells[13].Value.ToString().Replace(".", ","));
+                        sum7 += Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value.ToString().Replace(".", ","));
+                        var potrosnja = dataGridView1.Rows[i].Cells[13].Value.ToString().Replace(".", ",");
+                        try
+                        {
+                            if (Convert.ToDouble(potrosnja) != 0)
+                            {
+                                sum6 += Convert.ToDouble(potrosnja);
+                                ukupno++;
+                            }
+
+                        }
+                        catch
+                        {
+
+                        }
                     }
-                    sum6 /= dataGridView1.Rows.Count;
+                    sum6 /= ukupno;
                     textBoxUkupnoKilometara.Text = sum1.ToString("0.00");
                     textBoxUkupnoCestarina.Text = sum2.ToString("0.00");
                     textBoxUkupnoGorivo.Text = sum3.ToString("0.00");
                     textBoxUkupnoCijena.Text = sum4.ToString("0.00");
                     textBoxVozaču.Text = sum5.ToString("0.00");
                     textBoxPotrosnja.Text = sum6.ToString("0.00");
+                    textBoxNama.Text = sum7.ToString("0.00");
                 }
                 else
                 {
@@ -288,7 +318,7 @@ namespace Kombiji
                 textBoxUkupnoGorivo.Clear();
                 textBoxVozaču.Clear();
 
-                double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0;
+                double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0, sum7 = 0, ukupno = 0;
                 for (int i = 0; i < dataGridView1.Rows.Count; ++i)
                 {
                     sum1 += Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value.ToString().Replace(".", ","));
@@ -296,15 +326,30 @@ namespace Kombiji
                     sum3 += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value.ToString().Replace(".", ","));
                     sum4 += Convert.ToDouble(dataGridView1.Rows[i].Cells[10].Value.ToString().Replace(".", ","));
                     sum5 += Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value.ToString().Replace(".", ","));
-                    sum6 += Convert.ToDouble(dataGridView1.Rows[i].Cells[13].Value.ToString().Replace(".", ","));
+                    sum7 += Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value.ToString().Replace(".", ","));
+                    var potrosnja = dataGridView1.Rows[i].Cells[13].Value.ToString().Replace(".", ",");
+                    try
+                    {
+                        if (Convert.ToDouble(potrosnja) != 0)
+                        {
+                            sum6 += Convert.ToDouble(potrosnja);
+                            ukupno++;
+                        }
+
+                    }
+                    catch
+                    {
+
+                    }
                 }
-                sum6 /= dataGridView1.Rows.Count;
+                sum6 /= ukupno;
                 textBoxUkupnoKilometara.Text = sum1.ToString("0.00");
                 textBoxUkupnoCestarina.Text = sum2.ToString("0.00");
                 textBoxUkupnoGorivo.Text = sum3.ToString("0.00");
                 textBoxUkupnoCijena.Text = sum4.ToString("0.00");
                 textBoxVozaču.Text = sum5.ToString("0.00");
                 textBoxPotrosnja.Text = sum6.ToString("0.00");
+                textBoxNama.Text = sum7.ToString("0.00");
             }
             catch
             {

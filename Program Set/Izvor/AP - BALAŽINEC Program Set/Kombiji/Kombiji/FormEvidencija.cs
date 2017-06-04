@@ -171,6 +171,8 @@ namespace Kombiji
 
         private void buttonIzlaz_Click(object sender, EventArgs e)
         {
+            File.Delete("IDRetka.txt");
+            File.Delete("IDTablica.txt");
             Close();
         }
 

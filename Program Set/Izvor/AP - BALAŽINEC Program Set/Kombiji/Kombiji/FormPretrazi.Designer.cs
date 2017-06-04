@@ -45,15 +45,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonReset = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBoxUkupnoGorivo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBoxVozaču = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxPotrosnja = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.bazaKombiDataSet1 = new Kombiji.BazaKombiDataSet1();
-            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.table1TableAdapter1 = new Kombiji.BazaKombiDataSet1TableAdapters.Table1TableAdapter();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,9 +59,20 @@
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.potrosnjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaKombiDataSet1 = new Kombiji.BazaKombiDataSet1();
+            this.textBoxUkupnoGorivo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxVozaču = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxPotrosnja = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.table1TableAdapter1 = new Kombiji.BazaKombiDataSet1TableAdapters.Table1TableAdapter();
+            this.textBoxNama = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -79,7 +81,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1170, -6);
+            this.button1.Location = new System.Drawing.Point(1300, -6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 71);
             this.button1.TabIndex = 0;
@@ -141,19 +143,19 @@
             // 
             // textBoxUkupnoKilometara
             // 
-            this.textBoxUkupnoKilometara.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxUkupnoKilometara.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxUkupnoKilometara.Location = new System.Drawing.Point(337, 113);
             this.textBoxUkupnoKilometara.Name = "textBoxUkupnoKilometara";
-            this.textBoxUkupnoKilometara.Size = new System.Drawing.Size(135, 44);
+            this.textBoxUkupnoKilometara.Size = new System.Drawing.Size(135, 38);
             this.textBoxUkupnoKilometara.TabIndex = 9;
             this.textBoxUkupnoKilometara.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBoxUkupnoCestarina
             // 
-            this.textBoxUkupnoCestarina.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxUkupnoCestarina.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxUkupnoCestarina.Location = new System.Drawing.Point(478, 113);
             this.textBoxUkupnoCestarina.Name = "textBoxUkupnoCestarina";
-            this.textBoxUkupnoCestarina.Size = new System.Drawing.Size(122, 44);
+            this.textBoxUkupnoCestarina.Size = new System.Drawing.Size(122, 38);
             this.textBoxUkupnoCestarina.TabIndex = 11;
             this.textBoxUkupnoCestarina.TextChanged += new System.EventHandler(this.textBoxUkupnoCestarina_TextChanged);
             // 
@@ -169,10 +171,10 @@
             // 
             // textBoxUkupnoCijena
             // 
-            this.textBoxUkupnoCijena.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxUkupnoCijena.Location = new System.Drawing.Point(999, 113);
+            this.textBoxUkupnoCijena.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxUkupnoCijena.Location = new System.Drawing.Point(1129, 113);
             this.textBoxUkupnoCijena.Name = "textBoxUkupnoCijena";
-            this.textBoxUkupnoCijena.Size = new System.Drawing.Size(122, 44);
+            this.textBoxUkupnoCijena.Size = new System.Drawing.Size(122, 38);
             this.textBoxUkupnoCijena.TabIndex = 19;
             this.textBoxUkupnoCijena.TextChanged += new System.EventHandler(this.textBoxUkupnoCijena_TextChanged);
             // 
@@ -180,7 +182,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(994, 48);
+            this.label5.Location = new System.Drawing.Point(1124, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 58);
             this.label5.TabIndex = 18;
@@ -198,7 +200,7 @@
             // buttonReset
             // 
             this.buttonReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonReset.Location = new System.Drawing.Point(1137, 71);
+            this.buttonReset.Location = new System.Drawing.Point(1267, 71);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(167, 87);
             this.buttonReset.TabIndex = 21;
@@ -248,77 +250,9 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(2, 163);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1296, 487);
+            this.dataGridView1.Size = new System.Drawing.Size(1427, 487);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // textBoxUkupnoGorivo
-            // 
-            this.textBoxUkupnoGorivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxUkupnoGorivo.Location = new System.Drawing.Point(734, 113);
-            this.textBoxUkupnoGorivo.Name = "textBoxUkupnoGorivo";
-            this.textBoxUkupnoGorivo.Size = new System.Drawing.Size(122, 44);
-            this.textBoxUkupnoGorivo.TabIndex = 24;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(729, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 58);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Ukupno \r\ngorivo:";
-            // 
-            // textBoxVozaču
-            // 
-            this.textBoxVozaču.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxVozaču.Location = new System.Drawing.Point(606, 113);
-            this.textBoxVozaču.Name = "textBoxVozaču";
-            this.textBoxVozaču.Size = new System.Drawing.Size(122, 44);
-            this.textBoxVozaču.TabIndex = 26;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(602, 48);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 58);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Ukupno\r\nvozaču:";
-            // 
-            // textBoxPotrosnja
-            // 
-            this.textBoxPotrosnja.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxPotrosnja.Location = new System.Drawing.Point(863, 113);
-            this.textBoxPotrosnja.Name = "textBoxPotrosnja";
-            this.textBoxPotrosnja.Size = new System.Drawing.Size(122, 44);
-            this.textBoxPotrosnja.TabIndex = 28;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(858, 48);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 58);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Prosječna\r\npotrošnja:";
-            // 
-            // bazaKombiDataSet1
-            // 
-            this.bazaKombiDataSet1.DataSetName = "BazaKombiDataSet1";
-            this.bazaKombiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // table1BindingSource
-            // 
-            this.table1BindingSource.DataMember = "Table1";
-            this.table1BindingSource.DataSource = this.bazaKombiDataSet1;
-            // 
-            // table1TableAdapter1
-            // 
-            this.table1TableAdapter1.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn10
             // 
@@ -333,89 +267,177 @@
             this.dataGridViewTextBoxColumn11.DataPropertyName = "Kombi";
             this.dataGridViewTextBoxColumn11.HeaderText = "Kombi";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 102;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.DataPropertyName = "Vozac";
             this.dataGridViewTextBoxColumn12.HeaderText = "Vozac";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 102;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.DataPropertyName = "Gorivo";
             this.dataGridViewTextBoxColumn13.HeaderText = "Gorivo";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 104;
+            this.dataGridViewTextBoxColumn13.Width = 106;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.DataPropertyName = "Cestarina";
             this.dataGridViewTextBoxColumn14.HeaderText = "Cestarina";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 136;
+            this.dataGridViewTextBoxColumn14.Width = 138;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.DataPropertyName = "Nama";
             this.dataGridViewTextBoxColumn15.HeaderText = "Nama";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 95;
+            this.dataGridViewTextBoxColumn15.Width = 97;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.DataPropertyName = "Vozacu";
             this.dataGridViewTextBoxColumn16.HeaderText = "Vozacu";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 113;
+            this.dataGridViewTextBoxColumn16.Width = 115;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.DataPropertyName = "Kilometri";
             this.dataGridViewTextBoxColumn17.HeaderText = "Kilometri";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 127;
+            this.dataGridViewTextBoxColumn17.Width = 129;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.DataPropertyName = "DatumOd";
             this.dataGridViewTextBoxColumn18.HeaderText = "DatumOd";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 132;
+            this.dataGridViewTextBoxColumn18.Width = 134;
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.DataPropertyName = "DatumDo";
             this.dataGridViewTextBoxColumn19.HeaderText = "DatumDo";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 131;
+            this.dataGridViewTextBoxColumn19.Width = 133;
             // 
             // dataGridViewTextBoxColumn20
             // 
             this.dataGridViewTextBoxColumn20.DataPropertyName = "UkupnaCijena";
             this.dataGridViewTextBoxColumn20.HeaderText = "UkupnaCijena";
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 182;
+            this.dataGridViewTextBoxColumn20.Width = 184;
             // 
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.DataPropertyName = "BrojFakture";
             this.dataGridViewTextBoxColumn21.HeaderText = "BrojFakture";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 157;
+            this.dataGridViewTextBoxColumn21.Width = 159;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.DataPropertyName = "Napomena";
             this.dataGridViewTextBoxColumn22.HeaderText = "Napomena";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 147;
+            this.dataGridViewTextBoxColumn22.Width = 149;
             // 
             // potrosnjaDataGridViewTextBoxColumn
             // 
             this.potrosnjaDataGridViewTextBoxColumn.DataPropertyName = "Potrosnja";
             this.potrosnjaDataGridViewTextBoxColumn.HeaderText = "Potrosnja";
             this.potrosnjaDataGridViewTextBoxColumn.Name = "potrosnjaDataGridViewTextBoxColumn";
-            this.potrosnjaDataGridViewTextBoxColumn.Width = 135;
+            this.potrosnjaDataGridViewTextBoxColumn.Width = 137;
+            // 
+            // table1BindingSource
+            // 
+            this.table1BindingSource.DataMember = "Table1";
+            this.table1BindingSource.DataSource = this.bazaKombiDataSet1;
+            // 
+            // bazaKombiDataSet1
+            // 
+            this.bazaKombiDataSet1.DataSetName = "BazaKombiDataSet1";
+            this.bazaKombiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // textBoxUkupnoGorivo
+            // 
+            this.textBoxUkupnoGorivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxUkupnoGorivo.Location = new System.Drawing.Point(864, 113);
+            this.textBoxUkupnoGorivo.Name = "textBoxUkupnoGorivo";
+            this.textBoxUkupnoGorivo.Size = new System.Drawing.Size(122, 38);
+            this.textBoxUkupnoGorivo.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(859, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 58);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Ukupno \r\ngorivo:";
+            // 
+            // textBoxVozaču
+            // 
+            this.textBoxVozaču.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxVozaču.Location = new System.Drawing.Point(606, 113);
+            this.textBoxVozaču.Name = "textBoxVozaču";
+            this.textBoxVozaču.Size = new System.Drawing.Size(122, 38);
+            this.textBoxVozaču.TabIndex = 26;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(602, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 58);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Ukupno\r\nvozaču:";
+            // 
+            // textBoxPotrosnja
+            // 
+            this.textBoxPotrosnja.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxPotrosnja.Location = new System.Drawing.Point(993, 113);
+            this.textBoxPotrosnja.Name = "textBoxPotrosnja";
+            this.textBoxPotrosnja.Size = new System.Drawing.Size(122, 38);
+            this.textBoxPotrosnja.TabIndex = 28;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(988, 48);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(130, 58);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Prosječna\r\npotrošnja:";
+            // 
+            // table1TableAdapter1
+            // 
+            this.table1TableAdapter1.ClearBeforeFill = true;
+            // 
+            // textBoxNama
+            // 
+            this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNama.Location = new System.Drawing.Point(734, 113);
+            this.textBoxNama.Name = "textBoxNama";
+            this.textBoxNama.Size = new System.Drawing.Size(122, 38);
+            this.textBoxNama.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(729, 48);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(109, 58);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Ukupno \r\nnama:";
             // 
             // FormPretrazi
             // 
@@ -423,8 +445,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1310, 651);
+            this.ClientSize = new System.Drawing.Size(1441, 651);
             this.ControlBox = false;
+            this.Controls.Add(this.textBoxNama);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxPotrosnja);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxVozaču);
@@ -450,8 +474,8 @@
             this.Text = "FormPretrazi";
             this.Load += new System.EventHandler(this.FormPretrazi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaKombiDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -521,5 +545,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn potrosnjaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBoxNama;
+        private System.Windows.Forms.Label label9;
     }
 }
