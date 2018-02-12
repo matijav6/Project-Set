@@ -1,0 +1,14 @@
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\bin\Release\Calendar.NET.dll
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\bin\Release\Calendar.NET.pdb
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.Calendar.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.CoolButton.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.EventDetails.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.EventToolTip.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.NavigateLeftButton.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.NavigateRightButton.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.ScrollPanel.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.TodayButton.resources
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.csproj.GenerateResource.Cache
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.dll
+C:\Users\Matija\Desktop\Project-Set\Program Set\Izvor\AP - BALAŽINEC Program Set\kalendar_source\Calendar.NET\obj\Release\Calendar.NET.pdb
