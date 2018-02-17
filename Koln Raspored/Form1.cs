@@ -40,7 +40,7 @@ namespace Koln_Raspored
 
             ostaliVozac3_ide = loadDriver("Darko");
 
-            ostaliVozac4_ide = loadDriver("Saša");
+            ostaliVozac4_ide = loadDriver("Sasa");
 
             ostaliVozac5_ide = loadDriver("Teo");
 
@@ -139,7 +139,7 @@ namespace Koln_Raspored
                 ReadOnlyEvent = true,
                 EventColor = Color.FromArgb(80, 170, 255),
                 RecurringFrequency = RecurringFrequencies.Custom,
-                EventText = "Saša",
+                EventText = "Sasa",
                 Rank = 1,
                 CustomRecurringFunction = ostaliVozaci4
             };
