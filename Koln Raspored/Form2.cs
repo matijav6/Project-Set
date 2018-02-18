@@ -30,6 +30,7 @@ namespace Koln_Raspored
         OleDbConnection conn;
         OleDbCommand cmd;
         bool godisnji = false;
+        bool delete = false;
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -140,7 +141,9 @@ namespace Koln_Raspored
 
                     sql = "CREATE TABLE " + glavniVozaci[x] + "(ID AUTOINCREMENT PRIMARY KEY , datum_ide varchar(30));";
                     cmd = new OleDbCommand(sql, conn);
-                    cmd.ExecuteNonQuery();                    
+                    cmd.ExecuteNonQuery();
+
+                    delete = true;
                 }                
 
                 foreach(string item in datum)
@@ -154,9 +157,7 @@ namespace Koln_Raspored
                 //*********kraj upisa u bazu*********
 
                 pocetniDatum = pocetniDatum.AddDays(7);
-            }
-
-            generirajPomocni(delete);
+            }            
         }
 
         //generiraj datume za ostale vozače, svaki tjedan ide jedan
@@ -201,13 +202,13 @@ namespace Koln_Raspored
         }
 
         //generiraj datume za pomoćnog vozača
-        public void generirajPomocni(bool delete)
+        public void generirajPomocni(bool delete, string mjenjanVozac)
         {
             int zamjena = 0;
 
             //traženje koga je mijenjal prvo
-            string mjenjanVozac = null, pocetniMjesec = pocetniDatumPomocni.Month.ToString();
-
+            string pocetniMjesec = pocetniDatumPomocni.Month.ToString();
+            
             int k = 0;
             conn = new OleDbConnection(connString);
             conn.Open();
@@ -221,52 +222,55 @@ namespace Koln_Raspored
                 sql = "CREATE TABLE " + pomocniVozaci[0] + "(ID AUTOINCREMENT PRIMARY KEY , datum_ide varchar(30));";
                 cmd = new OleDbCommand(sql, conn);
                 cmd.ExecuteNonQuery();
-            }            
-
-            for (int i = 0; i < glavniVozaci.Count(); i++)
+            }      
+                  
+            if(mjenjanVozac == null)
             {
-                sql = "SELECT datum_ide FROM " + glavniVozaci[i] + " WHERE datum_ide = '" + pocetniDatumPomocni.AddDays(7).ToShortDateString() + "'";
-
-                cmd = new OleDbCommand(sql, conn);
-                OleDbDataReader reader = cmd.ExecuteReader();
-
-
-                while (reader.Read())
+                for (int i = 0; i < glavniVozaci.Count(); i++)
                 {
-                    if (reader["datum_ide"].ToString() == null)
-                        break;
-                    else
-                    {
-                        i++;
-                        if (i >= glavniVozaci.Count())
-                            i = 0;
-                        mjenjanVozac = glavniVozaci[i];
-                        break;
-                    }
-                }
-                if (mjenjanVozac != null)
-                    break;
-            }
-            //prvo je mijenjal 'mjenjanVozac'
+                    sql = "SELECT datum_ide FROM " + glavniVozaci[i] + " WHERE datum_ide = '" + pocetniDatumPomocni.AddDays(7).ToShortDateString() + "'";
 
-            if(!godisnji)
+                    cmd = new OleDbCommand(sql, conn);
+                    OleDbDataReader reader = cmd.ExecuteReader();
+
+
+                    while (reader.Read())
+                    {
+                        if (reader["datum_ide"].ToString() == null)
+                            break;
+                        else
+                        {
+                            i++;
+                            if (i >= glavniVozaci.Count())
+                                i = 0;
+                            mjenjanVozac = glavniVozaci[i];
+                            break;
+                        }
+                    }
+                    if (mjenjanVozac != null)
+                        break;
+                }
+            }
+           
+            //prvo je mijenjal 'mjenjanVozac'
+            if (!godisnji)
             {
                 try
                 {
                     //obriši datum od glavnog, kad je na redu pomocni vozac
                     sql = "DELETE FROM " + mjenjanVozac + " WHERE datum_ide = '" + pocetniDatumPomocni.ToShortDateString() + "';";
                     cmd = new OleDbCommand(sql, conn);
-                    cmd.ExecuteNonQuery();                    
+                    cmd.ExecuteNonQuery();
 
                     sql = "INSERT INTO  " + pomocniVozaci[0] + "(datum_ide) VALUES('" + pocetniDatumPomocni.ToShortDateString() + "');";
-                    cmd = new OleDbCommand(sql, conn);                                        
+                    cmd = new OleDbCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
                 }
                 catch { }
-
-            }
+            }            
 
             //najdemo koga je mjenjal u glavniVozaci
-            for (int i = 0; i < glavniVozaci.Count(); i++)
+            for(int i = 0; i < glavniVozaci.Count(); i++)
             {
                 if(glavniVozaci[i] == mjenjanVozac)
                 {
@@ -310,13 +314,13 @@ namespace Koln_Raspored
                     //obriši datum od glavnog, kad je na redu pomocni vozac
                     sql = "DELETE FROM " + glavniVozaci[k] + " WHERE datum_ide = '" + datumBaza.ToShortDateString() + "';";
                     cmd = new OleDbCommand(sql, conn);
-                    cmd.ExecuteNonQuery();                    
+                    cmd.ExecuteNonQuery();
                     
                     sql = "INSERT INTO  " + pomocniVozaci[0] + "(datum_ide) VALUES('" + datumBaza.ToShortDateString() + "');";
                     cmd = new OleDbCommand(sql, conn);
                     cmd.ExecuteNonQuery();
-                    conn.Close();                    
-
+                    conn.Close();
+                    
                     pocetniMjesec = i.Month.ToString();
 
                     zamjena++;
@@ -340,6 +344,7 @@ namespace Koln_Raspored
             OleDbCommand cmd;
             OleDbDataReader reader;
             string prosliTjedan = null;
+
             for(int i = 0; i < glavniVozaci.Count(); i++)
             {
                 sql = "SELECT datum_ide FROM " + glavniVozaci[i] + " WHERE datum_ide = '" + DateTime.Parse(oznaceniDatum).AddDays(-7).ToShortDateString() + "'";
@@ -445,19 +450,109 @@ namespace Koln_Raspored
                 datumBaza = reader["datum_ide"].ToString();
             }
             conn.Close();
-
-            pocetniDatumPomocni = DateTime.Parse(datumBaza).AddMonths(-1);
             
-
             conn.Open();
             sql = "INSERT INTO " + zamjena + "(datum_ide) VALUES ('" + oznaceniDatum + "');";
             cmd = new OleDbCommand(sql, conn);
             cmd.ExecuteNonQuery();            
             conn.Close();
 
+
+            conn.Open();
+
+            //ako je mjenjan vozač već bil u označenom mjesecu, onda taj moremo preskočiti
+            //ako nije bil, onda treba saznati koga je mjenjal prošli i zamjeniti ovaj
+            string zadnjiDatum = null;
+            for (int i = 0; i < pomocniVozaci.Count(); i++)
+            {
+                sql = "SELECT datum_ide FROM " + pomocniVozaci[i] +  ";";
+
+                cmd = new OleDbCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                    zadnjiDatum = reader["datum_ide"].ToString();
+            }
+            conn.Close();
+            pocetniDatumPomocni = DateTime.Parse(datumBaza).AddMonths(1);
             generirajGlavni(false);
 
+            //generiraj pomocni, nakon označenog datum
+            //zadnjiDatum - zadnji datum kad je išel pomoćni, prije označenog            
+             if (DateTime.Parse(zadnjiDatum).Month == DateTime.Parse(oznaceniDatum).Month)
+             {
+                 pocetniDatumPomocni = DateTime.Parse(datumBaza);
+                 generirajGlavni(false);
+                generirajPomocni(false, null);
+             }
 
+             else
+             {                
+                 generirajGlavni(false);
+
+                 conn.Open();
+                 int k = 0;
+                 string dat = null;
+                 for (int i = 0; i < glavniVozaci.Count(); i++)
+                 {
+                     sql = "SELECT datum_ide FROM " + glavniVozaci[i] + " WHERE datum_ide  = '" + DateTime.Parse(zadnjiDatum).AddDays(7).ToShortDateString() + "';";
+
+                     cmd = new OleDbCommand(sql, conn);
+                     reader = cmd.ExecuteReader();
+
+                     //ako postoji zapis, onda se ovo izvršava
+                     while (reader.Read())
+                         k = i;                     
+                 }
+                /* k++;
+                 if (k == glavniVozaci.Count())
+                     k = 0; */
+
+                 sql = "SELECT datum_ide FROM " + glavniVozaci[k] + ";";
+
+                 cmd = new OleDbCommand(sql, conn);
+                 reader = cmd.ExecuteReader();
+
+                 while (reader.Read())
+                 {
+                     dat = reader["datum_ide"].ToString();
+                     if (DateTime.Parse(reader["datum_ide"].ToString()) > DateTime.Parse(oznaceniDatum))
+                         break;                        
+                 }
+                 conn.Close();
+                conn.Open();
+
+                sql = "DELETE FROM " + glavniVozaci[k] + " WHERE datum_ide  = '" + dat + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                sql = "INSERT INTO " + pomocniVozaci[0] + " (datum_ide) VALUES('" + dat + "');";                
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                sql = "SELECT datum_ide FROM " + pomocniVozaci[0] + ";";
+
+                cmd = new OleDbCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+                brisi.Clear();
+                while (reader.Read())
+                {                    
+                    if (DateTime.Parse(reader["datum_ide"].ToString()) > DateTime.Parse(oznaceniDatum) && DateTime.Parse(reader["datum_ide"].ToString()).ToShortDateString() != dat)
+                        brisi.Add(reader["datum_ide"].ToString());
+                }
+                foreach(string item in brisi)
+                {
+                    sql = "DELETE FROM " + pomocniVozaci[0] + " WHERE datum_ide  = '" + item + "';";
+                    cmd = new OleDbCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                conn.Close();
+
+                pocetniDatumPomocni = DateTime.Parse(dat);
+                
+                generirajPomocni(false, glavniVozaci[k]);
+                
+            }                     
         }
 
         public void godisnjiOstaliVozaci(string oznaceniDatum)
@@ -569,6 +664,119 @@ namespace Koln_Raspored
             this.Refresh();
         }
 
+        public void godisnjiOstaliVozaciVer2(string oznaceniDatum)
+        {
+        opet:
+            DateTime oznaceniDatumDT = DateTime.Parse(oznaceniDatum);
+            string noviDatum = null;
+
+            FormZamjena form3 = new FormZamjena(ostaliVozaci);
+            form3.ShowDialog();
+            string vozacZamjena = form3.zamjena;
+
+            if (vozacZamjena == null)
+                goto end;
+            conn = new OleDbConnection(connString);
+            conn.Open();
+
+            //najdi prvi sljedeći datum tražene zamjene u odnosu na odabrani datum
+            sql = "SELECT datum_ide FROM " + vozacZamjena;
+
+            cmd = new OleDbCommand(sql, conn);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                noviDatum = reader["datum_ide"].ToString();
+                if (oznaceniDatumDT <= DateTime.Parse(reader["datum_ide"].ToString()))
+                    break;
+            }
+
+            string tjedanPrije1 = null, tjedanPrije2, tjedanPoslije1 = null, tjedanPoslije2 = null;
+
+            for (int i = 0; i < ostaliVozaci.Count(); i++)
+            {
+                sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + oznaceniDatumDT.AddDays(-7).ToShortDateString() + "';";
+
+                cmd = new OleDbCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    //datumBaza = reader["datum_ide"].ToString();
+                    tjedanPrije1 = ostaliVozaci[i];
+
+                }
+            }
+
+            for (int i = 0; i < ostaliVozaci.Count(); i++)
+            {
+                sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + DateTime.Parse(noviDatum).AddDays(-7).ToShortDateString() + "';";
+
+                cmd = new OleDbCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    //datumBaza = reader["datum_ide"].ToString();
+                    tjedanPrije2 = ostaliVozaci[i];
+
+                }
+            }
+
+            for (int i = 0; i < ostaliVozaci.Count(); i++)
+            {
+                sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + DateTime.Parse(noviDatum).AddDays(7).ToShortDateString() + "';";
+
+                cmd = new OleDbCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    //datumBaza = reader["datum_ide"].ToString();
+                    tjedanPoslije1 = ostaliVozaci[i];
+
+                }
+            }
+
+            for (int i = 0; i < ostaliVozaci.Count(); i++)
+            {
+                sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + oznaceniDatumDT.AddDays(7).ToShortDateString() + "';";
+
+                cmd = new OleDbCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    //datumBaza = reader["datum_ide"].ToString();
+                    tjedanPoslije2 = ostaliVozaci[i];
+
+                }
+            }
+
+            if (vozacZamjena == comboBox1.SelectedItem.ToString() || vozacZamjena == tjedanPrije1 || vozacZamjena == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije2)
+            {
+                MessageBox.Show("Odaberi drugog vozača");
+                goto opet;
+            }
+
+            //kad je pronađen prvi sljedeći datum, obavi zamjenu
+            sql = "UPDATE " + vozacZamjena + " SET datum_ide = '" + oznaceniDatum + "' WHERE datum_ide  = '" + noviDatum + "';";
+            cmd = new OleDbCommand(sql, conn);
+            cmd.ExecuteNonQuery();
+
+            sql = "UPDATE " + comboBox1.SelectedItem.ToString() + " SET datum_ide = '" + noviDatum + "' WHERE datum_ide  = '" + oznaceniDatum + "';";
+            cmd = new OleDbCommand(sql, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+
+            //obriši sve nakon if(ostaliVozaci[i] == odabran) ostaliVozaci.Count() - i * 7
+            //generiraj ostaleVozace
+        end:
+            this.Refresh();
+        }
+
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             loadData();            
@@ -584,7 +792,11 @@ namespace Koln_Raspored
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             if (glavniVozaci.Contains(comboBox1.SelectedItem.ToString()) || pomocniVozaci.Contains(comboBox1.SelectedItem.ToString()))
+            {
                 generirajGlavni(true);
+                generirajPomocni(true, null);
+            }
+                
 
             else
                 generirajOstali();
@@ -605,6 +817,7 @@ namespace Koln_Raspored
             buttonGodisnji.Visible = false;
             buttonSave.Visible = false;
             godisnji = true;
+
             if (glavniVozaci.Contains(vozac) || pomocniVozaci.Contains(vozac))
                 godisnjiGlavniVozaci(oznaceniDatum);                
 
