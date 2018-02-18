@@ -161,7 +161,7 @@ namespace Koln_Raspored
         }
 
         //generiraj datume za ostale vozače, svaki tjedan ide jedan
-        public void generirajOstali()
+        public void generirajOstali(bool delete)
         {
             List<string> datum = new List<string>();
 
@@ -179,13 +179,16 @@ namespace Koln_Raspored
                 conn = new OleDbConnection(connString);
                 conn.Open();
 
-                sql = "DROP TABLE " + ostaliVozaci[x];
-                cmd = new OleDbCommand(sql, conn);
-                cmd.ExecuteNonQuery();
+                if(delete)
+                {
+                    sql = "DROP TABLE " + ostaliVozaci[x];
+                    cmd = new OleDbCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
 
-                sql = "CREATE TABLE " + ostaliVozaci[x] + "(ID AUTOINCREMENT PRIMARY KEY , datum_ide varchar(30));";
-                cmd = new OleDbCommand(sql, conn);
-                cmd.ExecuteNonQuery();
+                    sql = "CREATE TABLE " + ostaliVozaci[x] + "(ID AUTOINCREMENT PRIMARY KEY , datum_ide varchar(30));";
+                    cmd = new OleDbCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                }                
 
                 foreach (string item in datum)
                 {
@@ -702,9 +705,7 @@ namespace Koln_Raspored
 
                 while (reader.Read())
                 {
-                    //datumBaza = reader["datum_ide"].ToString();
                     tjedanPrije1 = ostaliVozaci[i];
-
                 }
             }
 
@@ -732,7 +733,6 @@ namespace Koln_Raspored
 
                 while (reader.Read())
                 {
-                    //datumBaza = reader["datum_ide"].ToString();
                     tjedanPoslije1 = ostaliVozaci[i];
 
                 }
@@ -753,10 +753,14 @@ namespace Koln_Raspored
                 }
             }
 
-            if (vozacZamjena == comboBox1.SelectedItem.ToString() || vozacZamjena == tjedanPrije1 || vozacZamjena == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije2)
+            if (vozacZamjena == comboBox1.SelectedItem.ToString())
             {
                 MessageBox.Show("Odaberi drugog vozača");
                 goto opet;
+            }
+            if (vozacZamjena == tjedanPrije1 || vozacZamjena == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije2)
+            {
+                MessageBox.Show("TU");
             }
 
             //kad je pronađen prvi sljedeći datum, obavi zamjenu
@@ -766,13 +770,11 @@ namespace Koln_Raspored
 
             sql = "UPDATE " + comboBox1.SelectedItem.ToString() + " SET datum_ide = '" + noviDatum + "' WHERE datum_ide  = '" + oznaceniDatum + "';";
             cmd = new OleDbCommand(sql, conn);
-            cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();            
 
-            conn.Close();
-
-
-            //obriši sve nakon if(ostaliVozaci[i] == odabran) ostaliVozaci.Count() - i * 7
-            //generiraj ostaleVozace
+            conn.Close();            
+            
+            generirajOstali(false);
         end:
             this.Refresh();
         }
@@ -799,7 +801,7 @@ namespace Koln_Raspored
                 
 
             else
-                generirajOstali();
+                generirajOstali(true);
 
             MessageBox.Show("Uspješno spremljeno!");
             this.Close();
@@ -819,10 +821,10 @@ namespace Koln_Raspored
             godisnji = true;
 
             if (glavniVozaci.Contains(vozac) || pomocniVozaci.Contains(vozac))
-                godisnjiGlavniVozaci(oznaceniDatum);                
+                godisnjiGlavniVozaci(oznaceniDatum);
 
             else if (ostaliVozaci.Contains(vozac))
-                godisnjiOstaliVozaci(oznaceniDatum);
+                godisnjiOstaliVozaciVer2(oznaceniDatum);
 
             buttonGenerate.Visible = true;
             buttonGodisnji.Visible = true;
