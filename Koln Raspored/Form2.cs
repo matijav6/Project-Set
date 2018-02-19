@@ -26,11 +26,10 @@ namespace Koln_Raspored
         string[] ostaliVozaci = { };
         string[] pomocniVozaci = { };
         DateTime pocetniDatum, pocetniDatumPomocni;
-        string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|dataDirectory|\\vozaci.mdb", sql = null;
+        string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|dataDirectory|\\bin\\vozaci.mdb", sql = null;
         OleDbConnection conn;
         OleDbCommand cmd;
         bool godisnji = false;
-        bool delete = false;
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -56,7 +55,7 @@ namespace Koln_Raspored
         {
 
             dataGridView1.ClearSelection();
-            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|dataDirectory|\\vozaci.mdb";
+            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|dataDirectory|\\bin\\vozaci.mdb";
 
             if (comboBox1.Items.Count == 0)
                 GetTables(connString);
@@ -438,6 +437,34 @@ namespace Koln_Raspored
                 conn.Close();
             }
 
+            if (DateTime.Parse(oznaceniDatum).ToShortDateString() == pocetniDatumPomocni.ToShortDateString() && comboBox1.SelectedItem.ToString() == pomocniVozaci[0])
+            {
+                MessageBox.Show("Ide prvi put ove godine i odma godišnji? " + comboBox1.SelectedItem.ToString() + " plaća kavu jer je ovo bilo zajebano složiti");
+
+                conn.Open();
+                sql = "INSERT INTO " + comboBox1.SelectedItem.ToString() + " (datum_ide) VALUES('" + DateTime.Parse(oznaceniDatum).AddDays(7).ToShortDateString() + "');";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+                pocetniDatumPomocni = DateTime.Parse(oznaceniDatum).AddDays(7);
+                pocetniDatum = DateTime.Parse(oznaceniDatum).AddDays(-7);
+                generirajGlavni(false);
+                generirajPomocni(false, null);
+
+                conn.Open();
+                sql = "DELETE FROM " + glavniVozaci[0] + " WHERE datum_ide  = '" + DateTime.Parse(oznaceniDatum).AddDays(7).ToShortDateString() + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                sql = "DELETE FROM " + glavniVozaci[0] + " WHERE datum_ide  = '" + DateTime.Parse(oznaceniDatum).AddDays(7).ToShortDateString() + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                goto end;
+
+            }
+
             string datumBaza = DateTime.Parse(oznaceniDatum).ToShortDateString();            
             sql = "SELECT datum_ide FROM " + pomocniVozaci[0] + "';";
 
@@ -482,11 +509,12 @@ namespace Koln_Raspored
 
             //generiraj pomocni, nakon označenog datum
             //zadnjiDatum - zadnji datum kad je išel pomoćni, prije označenog            
-             if (DateTime.Parse(zadnjiDatum).Month == DateTime.Parse(oznaceniDatum).Month)
+            
+            if (DateTime.Parse(zadnjiDatum).Month == DateTime.Parse(oznaceniDatum).Month)
              {
                  pocetniDatumPomocni = DateTime.Parse(datumBaza);
                  generirajGlavni(false);
-                generirajPomocni(false, null);
+                 generirajPomocni(false, null);
              }
 
              else
@@ -555,7 +583,9 @@ namespace Koln_Raspored
                 
                 generirajPomocni(false, glavniVozaci[k]);
                 
-            }                     
+            }
+        end:
+            this.Refresh();    
         }
 
         public void godisnjiOstaliVozaci(string oznaceniDatum)
@@ -626,7 +656,6 @@ namespace Koln_Raspored
 
                 while (reader.Read())
                 {
-                    //datumBaza = reader["datum_ide"].ToString();
                     tjedanPoslije1 = ostaliVozaci[i];
 
                 }
@@ -641,7 +670,6 @@ namespace Koln_Raspored
 
                 while (reader.Read())
                 {
-                    //datumBaza = reader["datum_ide"].ToString();
                     tjedanPoslije2 = ostaliVozaci[i];
 
                 }
@@ -693,9 +721,11 @@ namespace Koln_Raspored
                 if (oznaceniDatumDT <= DateTime.Parse(reader["datum_ide"].ToString()))
                     break;
             }
+            conn.Close();
 
             string tjedanPrije1 = null, tjedanPrije2, tjedanPoslije1 = null, tjedanPoslije2 = null;
 
+            conn.Open();
             for (int i = 0; i < ostaliVozaci.Count(); i++)
             {
                 sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + oznaceniDatumDT.AddDays(-7).ToShortDateString() + "';";
@@ -708,7 +738,8 @@ namespace Koln_Raspored
                     tjedanPrije1 = ostaliVozaci[i];
                 }
             }
-
+            conn.Close();
+            conn.Open();
             for (int i = 0; i < ostaliVozaci.Count(); i++)
             {
                 sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + DateTime.Parse(noviDatum).AddDays(-7).ToShortDateString() + "';";
@@ -718,12 +749,12 @@ namespace Koln_Raspored
 
                 while (reader.Read())
                 {
-                    //datumBaza = reader["datum_ide"].ToString();
                     tjedanPrije2 = ostaliVozaci[i];
 
                 }
             }
-
+            conn.Close();
+            conn.Open();
             for (int i = 0; i < ostaliVozaci.Count(); i++)
             {
                 sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + DateTime.Parse(noviDatum).AddDays(7).ToShortDateString() + "';";
@@ -737,7 +768,8 @@ namespace Koln_Raspored
 
                 }
             }
-
+            conn.Close();
+            conn.Open();
             for (int i = 0; i < ostaliVozaci.Count(); i++)
             {
                 sql = "SELECT datum_ide FROM " + ostaliVozaci[i] + " WHERE datum_ide = '" + oznaceniDatumDT.AddDays(7).ToShortDateString() + "';";
@@ -745,38 +777,150 @@ namespace Koln_Raspored
                 cmd = new OleDbCommand(sql, conn);
                 reader = cmd.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    //datumBaza = reader["datum_ide"].ToString();
+                while (reader.Read())                
                     tjedanPoslije2 = ostaliVozaci[i];
-
-                }
             }
-
+            conn.Close();
             if (vozacZamjena == comboBox1.SelectedItem.ToString())
             {
                 MessageBox.Show("Odaberi drugog vozača");
                 goto opet;
             }
-            if (vozacZamjena == tjedanPrije1 || vozacZamjena == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije2)
+
+            if(vozacZamjena == tjedanPrije1)
             {
-                MessageBox.Show("TU");
+                MessageBox.Show("Odabrani vozač je vozil tjedan prije!");
+                goto opet;
             }
 
-            //kad je pronađen prvi sljedeći datum, obavi zamjenu
-            sql = "UPDATE " + vozacZamjena + " SET datum_ide = '" + oznaceniDatum + "' WHERE datum_ide  = '" + noviDatum + "';";
-            cmd = new OleDbCommand(sql, conn);
-            cmd.ExecuteNonQuery();
+            string glavni = comboBox1.SelectedItem.ToString();
+            int kGlavni = 0, kZamjena = 0;
+            DateTime pom = DateTime.Now;
+            if (vozacZamjena == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije1 || comboBox1.SelectedItem.ToString() == tjedanPoslije2)
+            {
+                //najdemo indekse za zamjenu
+                for(int i = 0; i < ostaliVozaci.Count(); i++)
+                {
+                    if (ostaliVozaci[i] == glavni)
+                        kGlavni = i;
+                    if (ostaliVozaci[i] == vozacZamjena)
+                        kZamjena = i;
+                }
+                
+                //zamjenimo
+                ostaliVozaci[kGlavni] = vozacZamjena;
+                ostaliVozaci[kZamjena] = glavni;
 
-            sql = "UPDATE " + comboBox1.SelectedItem.ToString() + " SET datum_ide = '" + noviDatum + "' WHERE datum_ide  = '" + oznaceniDatum + "';";
-            cmd = new OleDbCommand(sql, conn);
-            cmd.ExecuteNonQuery();            
+                //od kojeg datuma treba obrisati
+                int sumDatum = ostaliVozaci.Count() - (kZamjena + 1);
+                if (sumDatum == 0)
+                    sumDatum = 1;
+                conn.Open();
+                pom = DateTime.Parse(noviDatum).AddDays(sumDatum * 7);
+                for(int i = 0; i < ostaliVozaci.Count(); i++)
+                {
+                    sql = "DELETE * FROM " + ostaliVozaci[i] + " WHERE Format(datum_ide,'yyyy-MM-dd hh:mm:ss') >= Format('" + pom.ToShortDateString() + "' , 'yyyy-MM-dd hh:mm:ss');";
+                    cmd = new OleDbCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                   // MessageBox.Show(sql);
+                }
+                conn.Close();
+                conn.Open();
 
-            conn.Close();            
-            
-            generirajOstali(false);
+                //kad je pronađen prvi sljedeći datum, obavi zamjenu
+                sql = "UPDATE " + vozacZamjena + " SET datum_ide = '" + oznaceniDatum + "' WHERE datum_ide  = '" + noviDatum + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                sql = "UPDATE " + comboBox1.SelectedItem.ToString() + " SET datum_ide = '" + noviDatum + "' WHERE datum_ide  = '" + oznaceniDatum + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                pocetniDatumPomocni = pom;
+                MessageBox.Show(pocetniDatumPomocni.ToShortDateString());
+                generirajOstali(false);
+            }
+            else
+            {
+                conn.Open();
+                sql = "UPDATE " + vozacZamjena + " SET datum_ide = '" + oznaceniDatum + "' WHERE datum_ide  = '" + noviDatum + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                sql = "UPDATE " + comboBox1.SelectedItem.ToString() + " SET datum_ide = '" + noviDatum + "' WHERE datum_ide  = '" + oznaceniDatum + "';";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }   
         end:
             this.Refresh();
+        }
+
+        public void safeCopy()
+        {
+            System.IO.File.Copy(Application.StartupPath + "\\bin\\vozaci.mdb", Application.StartupPath + "\\bin\\vozaci.mdb.bak",true);
+        }
+
+        public void save()
+        {
+            List<string> datumi = new List<string>();
+            bool con = true;
+            for(int i = 0; i < dataGridView1.RowCount - 1; i++)
+            {
+                string pom = dataGridView1.Rows[i].Cells[1].Value.ToString();
+                try
+                {
+                    string dat = DateTime.Parse(pom).ToShortDateString();
+                }
+                catch
+                {
+                    MessageBox.Show("Uneseni datum je u krivom formatu, mora biti dd.mm.yyyy.");
+                    break;
+                }
+                
+                if (pom == null)
+                {
+                    con = false;
+                    break;
+                }
+                    
+                else
+                    datumi.Add(pom);
+            }
+            if (con)
+            {
+                conn = new OleDbConnection(connString);
+                conn.Open();
+
+                sql = "DROP TABLE " + comboBox1.SelectedItem.ToString();
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                sql = "CREATE TABLE " + comboBox1.SelectedItem.ToString() + "(ID AUTOINCREMENT PRIMARY KEY , datum_ide varchar(30));";
+                cmd = new OleDbCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+                conn.Open();
+                foreach (string item in datumi)
+                {
+                    string pom = item;
+                    if (!item.EndsWith("."))
+                        pom = pom + ".";
+
+                    sql = "INSERT INTO " + comboBox1.SelectedItem.ToString() + " (datum_ide) VALUES ('" + pom + "');";
+                    cmd = new OleDbCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                conn.Close();
+                MessageBox.Show("Uspješno spremljeno!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nekaj si zajebal");
+                this.Close();
+            }
         }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
@@ -785,14 +929,17 @@ namespace Koln_Raspored
         }
        
         private void buttonSave_Click(object sender, EventArgs e)
-        {                       
+        {
+            safeCopy();
             buttonGenerate.Visible = false;
             buttonSave.Visible = false;
             buttonGodisnji.Visible = false;
+            save();
         }    
 
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
+            safeCopy();
             if (glavniVozaci.Contains(comboBox1.SelectedItem.ToString()) || pomocniVozaci.Contains(comboBox1.SelectedItem.ToString()))
             {
                 generirajGlavni(true);
@@ -809,6 +956,8 @@ namespace Koln_Raspored
 
         private void buttonGodisnji_Click(object sender, EventArgs e)
         {
+            safeCopy();
+
             int rowindex = dataGridView1.CurrentCell.RowIndex;
             int columnindex = dataGridView1.CurrentCell.ColumnIndex;
                          

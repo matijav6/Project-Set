@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonGenerate = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonGodisnji = new System.Windows.Forms.Button();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumideDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.acoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vozaciDataSet = new Koln_Raspored.vozaciDataSet();
             this.acoTableAdapter = new Koln_Raspored.vozaciDataSetTableAdapters.AcoTableAdapter();
-            this.buttonGenerate = new System.Windows.Forms.Button();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.buttonGodisnji = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vozaciDataSet)).BeginInit();
@@ -68,36 +69,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(464, 279);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Visible = false;
-            this.iDDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // datumideDataGridViewTextBoxColumn
-            // 
-            this.datumideDataGridViewTextBoxColumn.DataPropertyName = "datum_ide";
-            this.datumideDataGridViewTextBoxColumn.FillWeight = 200F;
-            this.datumideDataGridViewTextBoxColumn.HeaderText = "Datum kada vozač ide";
-            this.datumideDataGridViewTextBoxColumn.Name = "datumideDataGridViewTextBoxColumn";
-            this.datumideDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // acoBindingSource
-            // 
-            this.acoBindingSource.DataMember = "Aco";
-            this.acoBindingSource.DataSource = this.vozaciDataSet;
-            // 
-            // vozaciDataSet
-            // 
-            this.vozaciDataSet.DataSetName = "vozaciDataSet";
-            this.vozaciDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // acoTableAdapter
-            // 
-            this.acoTableAdapter.ClearBeforeFill = true;
             // 
             // buttonGenerate
             // 
@@ -129,6 +100,36 @@
             this.buttonGodisnji.UseVisualStyleBackColor = true;
             this.buttonGodisnji.Click += new System.EventHandler(this.buttonGodisnji_Click);
             // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Visible = false;
+            this.iDDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // datumideDataGridViewTextBoxColumn
+            // 
+            this.datumideDataGridViewTextBoxColumn.DataPropertyName = "datum_ide";
+            this.datumideDataGridViewTextBoxColumn.FillWeight = 200F;
+            this.datumideDataGridViewTextBoxColumn.HeaderText = "Datum kada vozač ide";
+            this.datumideDataGridViewTextBoxColumn.Name = "datumideDataGridViewTextBoxColumn";
+            this.datumideDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // acoBindingSource
+            // 
+            this.acoBindingSource.DataMember = "Aco";
+            this.acoBindingSource.DataSource = this.vozaciDataSet;
+            // 
+            // vozaciDataSet
+            // 
+            this.vozaciDataSet.DataSetName = "vozaciDataSet";
+            this.vozaciDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // acoTableAdapter
+            // 
+            this.acoTableAdapter.ClearBeforeFill = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +142,7 @@
             this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

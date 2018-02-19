@@ -289,7 +289,7 @@ namespace Koln_Raspored
         static private List<string> loadDriver(string driver)
         {
 
-            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|dataDirectory|\\vozaci.mdb";
+            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|dataDirectory|\\bin\\vozaci.mdb";
 
 
             //----------SQL instrukcija-----------\\
